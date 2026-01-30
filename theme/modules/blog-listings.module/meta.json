@@ -1,25 +1,30 @@
 {
-  "content_tags" : [ {
-    "name" : "BLOG",
-    "source" : "USER"
-  } ],
-  "global" : false,
-  "content_types" : [ "BLOG_LISTING" ],
-  "master_language" : "en",
-  "inline_help_text" : "<p>You can list your blog posts in various layouts.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-  "categories" : [ "blog" ],
-  "host_template_types" : [ "BLOG_LISTING" ],
-  "module_id" : 306784271038,
-  "js_assets" : [ {
-    "autoload" : false,
-    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/masonry.pkgd.min.js",
-    "name" : "masonry.pkgd.min.js"
-  }, {
-    "autoload" : false,
-    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/infinite-scroll.pkgd.min.js",
-    "name" : "infinite-scroll.pkgd.min.js"
-  } ],
-  "label" : "Blog listings",
-  "icon" : "../../images/module-icons/blog.svg",
-  "is_available_for_new_content" : true
+  "content_tags": [
+    {
+      "name": "BLOG",
+      "source": "USER"
+    }
+  ],
+  "global": false,
+  "content_types": ["BLOG_LISTING"],
+  "master_language": "en",
+  "inline_help_text": "<p>You can list your blog posts in various layouts.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories": ["blog"],
+  "host_template_types": ["BLOG_LISTING"],
+  "module_id": 306784271038,
+  "js_assets": [
+    {
+      "autoload": false,
+      "path": "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/masonry.pkgd.min.js",
+      "name": "masonry.pkgd.min.js"
+    },
+    {
+      "autoload": false,
+      "path": "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/infinite-scroll.pkgd.min.js",
+      "name": "infinite-scroll.pkgd.min.js"
+    }
+  ],
+  "label": "Blog listings",
+  "icon": "../../images/module-icons/blog.svg",
+  "is_available_for_new_content": true
 }

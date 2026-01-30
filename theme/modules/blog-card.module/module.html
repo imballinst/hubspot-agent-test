@@ -1,24 +1,14 @@
 <div class="blog-card">
   <div class="blog-card__content">
     <h3 class="blog-card__title">
-      <a href="{{ blog_post.absolute_url }}" class="blog-card__link">
-        {{ blog_post.name }}
-      </a>
+      <a href="{{ blog_post.absolute_url }}" class="blog-card__link"> {{ blog_post.name }} </a>
     </h3>
-    <p class="blog-card__date">
-      {{ blog_post.publish_date|dateformat('%b %d, %Y') }}
-    </p>
-    <p class="blog-card__excerpt">
-      {{ blog_post.post_summary|truncatehtml(150) }}
-    </p>
+    <p class="blog-card__date">{{ blog_post.publish_date|dateformat('%b %d, %Y') }}</p>
+    <p class="blog-card__excerpt">{{ blog_post.post_summary|truncatehtml(150) }}</p>
   </div>
   {% if show_image and blog_post.featured_image %}
   <div class="blog-card__image">
-    <img
-      src="{{ blog_post.featured_image }}"
-      alt="{{ blog_post.name }}"
-      class="blog-card__img"
-    />
+    <img src="{{ blog_post.featured_image }}" alt="{{ blog_post.name }}" class="blog-card__img" />
   </div>
   {% endif %}
 </div>

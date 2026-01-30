@@ -2,9 +2,9 @@ body {
   word-break: break-word;
 }
 
-html[lang^="ja"] body,
-html[lang^="zh"] body,
-html[lang^="ko"] body {
+html[lang^='ja'] body,
+html[lang^='zh'] body,
+html[lang^='ko'] body {
   line-break: strict;
   word-break: break-all;
 }

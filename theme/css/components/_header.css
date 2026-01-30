@@ -284,7 +284,7 @@ ul.lang_list_class::before {
 
 .header__close--toggle::before,
 .header__close--toggle::after {
-  content: " ";
+  content: ' ';
   width: 2.5px;
   border-radius: 10px;
   top: 0;

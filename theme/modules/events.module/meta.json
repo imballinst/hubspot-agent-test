@@ -1,15 +1,17 @@
 {
-  "content_tags" : [ {
-    "name" : "LISTS",
-    "source" : "USER"
-  } ],
-  "global" : false,
-  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
-  "inline_help_text" : "<p>A sleek list for your events which includes a title, date and a button which you can redirect to any link.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-  "categories" : [ "body_content", "design", "media" ],
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "module_id" : 306783804125,
-  "label" : "Events",
-  "icon" : "../../images/module-icons/calendar-check.svg",
-  "is_available_for_new_content" : true
+  "content_tags": [
+    {
+      "name": "LISTS",
+      "source": "USER"
+    }
+  ],
+  "global": false,
+  "content_types": ["LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST"],
+  "inline_help_text": "<p>A sleek list for your events which includes a title, date and a button which you can redirect to any link.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories": ["body_content", "design", "media"],
+  "host_template_types": ["PAGE", "BLOG_POST", "BLOG_LISTING"],
+  "module_id": 306783804125,
+  "label": "Events",
+  "icon": "../../images/module-icons/calendar-check.svg",
+  "is_available_for_new_content": true
 }

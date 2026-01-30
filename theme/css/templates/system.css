@@ -67,7 +67,7 @@
   max-width: 100%;
 }
 
-.systems-page form input[type="submit"] {
+.systems-page form input[type='submit'] {
   margin: 0.625rem 0;
   display: block;
 }
@@ -109,7 +109,7 @@ ul.hs-search-results__listing li p {
 
 /* Password prompt */
 
-.password-prompt input[type="password"] {
+.password-prompt input[type='password'] {
   height: auto !important;
   margin-bottom: 1.4rem;
 }
@@ -132,7 +132,7 @@ ul.hs-search-results__listing li p {
   padding-bottom: 0 !important;
 }
 
-.backup-unsubscribe input[type="email"] {
+.backup-unsubscribe input[type='email'] {
   font-size: 0.875rem !important;
   margin-bottom: 1.4rem;
   padding: 1rem !important;
@@ -151,7 +151,7 @@ ul.hs-search-results__listing li p {
 
 /* Membership pages */
 
-#hs-membership-form a[class*="show-password"] {
+#hs-membership-form a[class*='show-password'] {
   font-size: 0.75rem;
 }
 

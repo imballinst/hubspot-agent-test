@@ -63,7 +63,7 @@
 
 .focus_blog_post-title::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 30px;
   height: 4px;
   bottom: -20px;
@@ -187,7 +187,7 @@
 
 .focus_blog_tag-author_title::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 30px;
   height: 4px;
   bottom: -30px;
@@ -256,7 +256,7 @@
 
 .blog-comments-container h2::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 30px;
   height: 4px;
   bottom: -30px;
@@ -302,7 +302,7 @@
 }
 
 .comment-reply-to.hs-button.secondary em::before {
-  content: "\00a0";
+  content: '\00a0';
 }
 
 /* Related posts */
@@ -319,7 +319,7 @@
 
 .blog-post__related-posts h2::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 30px;
   height: 4px;
   bottom: -30px;

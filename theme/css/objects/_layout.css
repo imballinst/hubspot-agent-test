@@ -7,14 +7,14 @@
 .row-fluid::before,
 .row-fluid::after {
   display: table;
-  content: "";
+  content: '';
 }
 
 .row-fluid::after {
   clear: both;
 }
 
-.row-fluid [class*="span"] {
+.row-fluid [class*='span'] {
   display: block;
   float: left;
   width: 100%;
@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 
-.row-fluid [class*="span"]:first-child {
+.row-fluid [class*='span']:first-child {
   margin-left: 0;
 }
 
@@ -81,7 +81,7 @@
 .container-fluid::before,
 .container-fluid::after {
   display: table;
-  content: "";
+  content: '';
 }
 
 .container-fluid::after {
@@ -93,7 +93,7 @@
     width: 100%;
   }
 
-  .row-fluid [class*="span"] {
+  .row-fluid [class*='span'] {
     display: block;
     float: none;
     width: auto;
@@ -109,14 +109,14 @@
   .row-fluid::before,
   .row-fluid::after {
     display: table;
-    content: "";
+    content: '';
   }
 
   .row-fluid::after {
     clear: both;
   }
 
-  .row-fluid [class*="span"] {
+  .row-fluid [class*='span'] {
     display: block;
     float: left;
     width: 100%;
@@ -128,7 +128,7 @@
     box-sizing: border-box;
   }
 
-  .row-fluid [class*="span"]:first-child {
+  .row-fluid [class*='span']:first-child {
     margin-left: 0;
   }
 
@@ -189,14 +189,14 @@
   .row-fluid::before,
   .row-fluid::after {
     display: table;
-    content: "";
+    content: '';
   }
 
   .row-fluid::after {
     clear: both;
   }
 
-  .row-fluid [class*="span"] {
+  .row-fluid [class*='span'] {
     display: block;
     float: left;
     width: 100%;
@@ -208,7 +208,7 @@
     box-sizing: border-box;
   }
 
-  .row-fluid [class*="span"]:first-child {
+  .row-fluid [class*='span']:first-child {
     margin-left: 0;
   }
 
@@ -266,7 +266,7 @@
 .clearfix::before,
 .clearfix::after {
   display: table;
-  content: "";
+  content: '';
 }
 
 .clearfix::after {

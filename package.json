@@ -7,15 +7,10 @@
   "main": "index.js",
   "scripts": {
     "fetch": "yarn hs cms fetch theme theme --overwrite",
-    "upload": "yarn hs cms upload theme theme",
-    "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check"
+    "upload": "yarn hs cms upload theme theme"
   },
   "dependencies": {
     "@hubspot/cli": "7.11.2"
-  },
-  "devDependencies": {
-    "oxfmt": "0.27.0"
   },
   "packageManager": "yarn@4.12.0"
 }
