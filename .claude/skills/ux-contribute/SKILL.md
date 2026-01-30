@@ -25,3 +25,5 @@ Use this skill when:
 1. Always use Tailwind CSS to implement the styling. Only use a separate CSS file when necessary.
 2. Always follow semantic HTML.
 3. Always run `yarn fmt` whenever an update to a file has been finished. Only do this AT THE END of a process (and when there will be no further updates to the file).
+4. DO NOT SKEW FROM THE DESIGN. There may be flaws in the design, but it is what it is.
+5. DO NOT CREATE ADDITIONAL FILES that are otherwise not required. Focus on the given task at hand.
