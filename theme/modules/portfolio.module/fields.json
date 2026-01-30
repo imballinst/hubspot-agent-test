@@ -1,320 +1,278 @@
-[
-  {
-    "id": "layout_style",
-    "name": "layout_style",
-    "label": "Layout style",
-    "inline_help_text": "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has 15+ layout options and also grid spacing settings.",
-    "required": true,
-    "locked": false,
-    "display": "select",
-    "choices": [
-      ["1col", "1 Column"],
-      ["2col", "2 Columns"],
-      ["3col", "3 Columns"],
-      ["masonry2", "Masonry (2 Columns)"],
-      ["masonry3", "Masonry (3 Columns)"]
-    ],
-    "multiple": false,
-    "reordering_enabled": true,
-    "preset": null,
-    "type": "choice",
-    "display_width": null,
-    "default": "masonry3"
+[ {
+  "id" : "layout_style",
+  "name" : "layout_style",
+  "label" : "Layout style",
+  "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has 15+ layout options and also grid spacing settings.",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1col", "1 Column" ], [ "2col", "2 Columns" ], [ "3col", "3 Columns" ], [ "masonry2", "Masonry (2 Columns)" ], [ "masonry3", "Masonry (3 Columns)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "masonry3"
+}, {
+  "id" : "portfolio_items",
+  "name" : "portfolio_items",
+  "label" : "Portfolio items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
   },
-  {
-    "id": "portfolio_items",
-    "name": "portfolio_items",
-    "label": "Portfolio items",
-    "required": false,
-    "locked": false,
-    "occurrence": {
-      "min": 1,
-      "max": null,
-      "sorting_label_field": null,
-      "default": 3
+  "children" : [ {
+    "id" : "portfolio_items.title",
+    "name" : "title",
+    "label" : "Work title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Work Title"
+  }, {
+    "id" : "portfolio_items.desc",
+    "name" : "desc",
+    "label" : "Work description",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Description lorem ipsum."
+  }, {
+    "id" : "portfolio_items.tag",
+    "name" : "tag",
+    "label" : "Work tag",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Branding"
+  }, {
+    "id" : "portfolio_items.thumbnail",
+    "name" : "thumbnail",
+    "label" : "Thumbnail",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-029.jpg",
+      "alt" : "p-020"
+    }
+  }, {
+    "id" : "portfolio_items.lightbox",
+    "name" : "lightbox",
+    "label" : "Lightbox gallery",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "portfolio_items.link",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "portfolio_items.lightbox",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
     },
-    "children": [
-      {
-        "id": "portfolio_items.title",
-        "name": "title",
-        "label": "Work title",
-        "required": false,
-        "locked": false,
-        "allow_new_line": false,
-        "type": "text",
-        "display_width": null,
-        "default": "Work Title"
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "href" : "",
+        "type" : "EXTERNAL"
       },
-      {
-        "id": "portfolio_items.desc",
-        "name": "desc",
-        "label": "Work description",
-        "required": false,
-        "locked": false,
-        "allow_new_line": false,
-        "type": "text",
-        "display_width": null,
-        "default": "Description lorem ipsum."
-      },
-      {
-        "id": "portfolio_items.tag",
-        "name": "tag",
-        "label": "Work tag",
-        "required": false,
-        "locked": false,
-        "allow_new_line": false,
-        "type": "text",
-        "display_width": null,
-        "default": "Branding"
-      },
-      {
-        "id": "portfolio_items.thumbnail",
-        "name": "thumbnail",
-        "label": "Thumbnail",
-        "required": false,
-        "locked": false,
-        "responsive": false,
-        "resizable": false,
-        "show_loading": false,
-        "type": "image",
-        "display_width": null,
-        "default": {
-          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-029.jpg",
-          "alt": "p-020"
-        }
-      },
-      {
-        "id": "portfolio_items.lightbox",
-        "name": "lightbox",
-        "label": "Lightbox gallery",
-        "required": false,
-        "locked": false,
-        "display": "toggle",
-        "type": "boolean",
-        "display_width": null,
-        "default": true
-      },
-      {
-        "id": "portfolio_items.link",
-        "name": "link",
-        "label": "Link",
-        "required": false,
-        "locked": false,
-        "visibility": {
-          "controlling_field": "portfolio_items.lightbox",
-          "controlling_field_path": null,
-          "controlling_value_regex": "false",
-          "property": null,
-          "operator": "EQUAL",
-          "access": null
-        },
-        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
-        "show_advanced_rel_options": false,
-        "type": "link",
-        "display_width": null,
-        "default": {
-          "url": {
-            "href": "",
-            "type": "EXTERNAL"
-          },
-          "open_in_new_tab": false,
-          "no_follow": false
-        }
-      },
-      {
-        "id": "portfolio_items.images",
-        "name": "images",
-        "label": "Images",
-        "required": false,
-        "locked": false,
-        "occurrence": {
-          "min": 1,
-          "max": null,
-          "sorting_label_field": null,
-          "default": 3
-        },
-        "visibility": {
-          "controlling_field": "portfolio_items.lightbox",
-          "controlling_field_path": null,
-          "controlling_value_regex": "true",
-          "property": null,
-          "operator": "EQUAL",
-          "access": null
-        },
-        "children": [
-          {
-            "id": "portfolio_items.images.image",
-            "name": "image",
-            "label": "Image",
-            "required": false,
-            "locked": false,
-            "responsive": false,
-            "resizable": false,
-            "show_loading": false,
-            "type": "image",
-            "display_width": null,
-            "default": {
-              "alt": "Lightgallery image",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
-            }
-          }
-        ],
-        "tab": "CONTENT",
-        "expanded": false,
-        "group_occurrence_meta": null,
-        "type": "group",
-        "display_width": null,
-        "default": [
-          {
-            "image": {
-              "alt": "Lightgallery image 1",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 2",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 3",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
-            }
-          }
-        ]
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "portfolio_items.images",
+    "name" : "images",
+    "label" : "Images",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "visibility" : {
+      "controlling_field" : "portfolio_items.lightbox",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "portfolio_items.images.image",
+      "name" : "image",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "alt" : "Lightgallery image",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
       }
-    ],
-    "tab": "CONTENT",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null,
-    "default": [
-      {
-        "title": "Greater Moments",
-        "desc": "Some teaser here.",
-        "tag": "Concert",
-        "thumbnail": {
-          "alt": "Portfolio thumbnail",
-          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-029.jpg",
-          "width": 700
-        },
-        "lightbox": true,
-        "images": [
-          {
-            "image": {
-              "alt": "Lightgallery image 1",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 2",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 3",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
-            }
-          }
-        ]
-      },
-      {
-        "title": "A Futuristic Exhibition",
-        "desc": "Some teaser here.",
-        "tag": "Exhibition",
-        "thumbnail": {
-          "alt": "Portfolio thumbnail",
-          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-030.jpg",
-          "width": 700
-        },
-        "lightbox": true,
-        "images": [
-          {
-            "image": {
-              "alt": "Lightgallery image 1",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 2",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 3",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
-            }
-          }
-        ]
-      },
-      {
-        "title": "Various Concerts #1",
-        "desc": "Some teaser here.",
-        "tag": "Concert",
-        "thumbnail": {
-          "alt": "Portfolio thumbnail",
-          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-031.jpg",
-          "width": 700
-        },
-        "lightbox": true,
-        "images": [
-          {
-            "image": {
-              "alt": "Lightgallery image 1",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 2",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
-            }
-          },
-          {
-            "image": {
-              "alt": "Lightgallery image 3",
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
-            }
-          }
-        ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "image" : {
+        "alt" : "Lightgallery image 1",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
       }
-    ]
-  },
-  {
-    "id": "styles",
-    "name": "styles",
-    "label": "Styles",
-    "required": false,
-    "locked": false,
-    "children": [
-      {
-        "id": "styles.styling",
-        "name": "styling",
-        "label": "Styling",
-        "inline_help_text": "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-        "required": false,
-        "locked": false,
-        "display": "radio",
-        "choices": [["auto", "Auto"]],
-        "multiple": false,
-        "reordering_enabled": true,
-        "preset": null,
-        "type": "choice",
-        "display_width": null,
-        "default": "auto"
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 2",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
       }
-    ],
-    "tab": "STYLE",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null
-  }
-]
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 3",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "Greater Moments",
+    "desc" : "Some teaser here.",
+    "tag" : "Concert",
+    "thumbnail" : {
+      "alt" : "Portfolio thumbnail",
+      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-029.jpg",
+      "width" : 700
+    },
+    "lightbox" : true,
+    "images" : [ {
+      "image" : {
+        "alt" : "Lightgallery image 1",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
+      }
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 2",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
+      }
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 3",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
+      }
+    } ]
+  }, {
+    "title" : "A Futuristic Exhibition",
+    "desc" : "Some teaser here.",
+    "tag" : "Exhibition",
+    "thumbnail" : {
+      "alt" : "Portfolio thumbnail",
+      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-030.jpg",
+      "width" : 700
+    },
+    "lightbox" : true,
+    "images" : [ {
+      "image" : {
+        "alt" : "Lightgallery image 1",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
+      }
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 2",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
+      }
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 3",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
+      }
+    } ]
+  }, {
+    "title" : "Various Concerts #1",
+    "desc" : "Some teaser here.",
+    "tag" : "Concert",
+    "thumbnail" : {
+      "alt" : "Portfolio thumbnail",
+      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-thumbnails/p-031.jpg",
+      "width" : 700
+    },
+    "lightbox" : true,
+    "images" : [ {
+      "image" : {
+        "alt" : "Lightgallery image 1",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-01.jpg"
+      }
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 2",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-02.jpg"
+      }
+    }, {
+      "image" : {
+        "alt" : "Lightgallery image 3",
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/portfolio-gallery/portfolio-gallery-03.jpg"
+      }
+    } ]
+  } ]
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.styling",
+    "name" : "styling",
+    "label" : "Styling",
+    "inline_help_text" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "auto", "Auto" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "auto"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

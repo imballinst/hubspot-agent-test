@@ -1,10 +1,7 @@
 {
-  "global": false,
-  "host_template_types": [
-    "PAGE",
-    "BLOG_POST"
-  ],
-  "other_global_settings_present": false,
-  "is_by_default_draggable": true,
-  "smart_type": "NOT_SMART"
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST" ],
+  "module_id" : 306892040929,
+  "is_available_for_new_content" : true
 }

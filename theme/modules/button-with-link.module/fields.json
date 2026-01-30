@@ -1,81 +1,71 @@
-[
-  {
-    "id": "button_type",
-    "name": "button_type",
-    "label": "Button type",
-    "required": true,
-    "locked": false,
-    "display": "select",
-    "choices": [
-      ["focus_primary_button", "Primary button"],
-      ["focus_secondary_button", "Secondary button"]
-    ],
-    "multiple": false,
-    "reordering_enabled": true,
-    "preset": null,
-    "type": "choice",
-    "display_width": null,
-    "default": "focus_primary_button"
-  },
-  {
-    "id": "link",
-    "name": "link",
-    "label": "Button link",
-    "inline_help_text": "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> allows you trigger a Pop-up CTA on button click.",
-    "required": false,
-    "locked": false,
-    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
-    "show_advanced_rel_options": false,
-    "type": "link",
-    "display_width": null,
-    "default": {
-      "url": {
-        "href": "",
-        "type": "EXTERNAL"
-      },
-      "no_follow": false,
-      "open_in_new_tab": false
-    }
-  },
-  {
-    "id": "button_text",
-    "name": "button_text",
-    "label": "Button text",
-    "required": true,
-    "locked": false,
-    "allow_new_line": false,
-    "type": "text",
-    "display_width": null,
-    "default": "Button text"
-  },
-  {
-    "id": "styles",
-    "name": "styles",
-    "label": "Styles",
-    "required": false,
-    "locked": false,
-    "children": [
-      {
-        "id": "styles.styling",
-        "name": "styling",
-        "label": "Styling",
-        "inline_help_text": "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-        "required": false,
-        "locked": false,
-        "display": "radio",
-        "choices": [["auto", "Auto"]],
-        "multiple": false,
-        "reordering_enabled": true,
-        "preset": null,
-        "type": "choice",
-        "display_width": null,
-        "default": "auto"
-      }
-    ],
-    "tab": "STYLE",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null
+[ {
+  "id" : "button_type",
+  "name" : "button_type",
+  "label" : "Button type",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "focus_primary_button", "Primary button" ], [ "focus_secondary_button", "Secondary button" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "focus_primary_button"
+}, {
+  "id" : "link",
+  "name" : "link",
+  "label" : "Button link",
+  "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> allows you trigger a Pop-up CTA on button click.",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "no_follow" : false,
+    "open_in_new_tab" : false
   }
-]
+}, {
+  "id" : "button_text",
+  "name" : "button_text",
+  "label" : "Button text",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Button text"
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.styling",
+    "name" : "styling",
+    "label" : "Styling",
+    "inline_help_text" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "auto", "Auto" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "auto"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

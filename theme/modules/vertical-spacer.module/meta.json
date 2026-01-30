@@ -1,17 +1,15 @@
 {
-  "content_tags": [
-    {
-      "name": "LAYOUT",
-      "source": "USER"
-    }
-  ],
-  "global": false,
-  "content_types": ["LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST"],
-  "inline_help_text": "Just a module for adding some free vertical space when needed. You can adjust the height of the empty space.",
-  "categories": ["design"],
-  "host_template_types": ["PAGE", "BLOG_POST", "BLOG_LISTING"],
-  "module_id": 306784271040,
-  "label": "Vertical spacer",
-  "icon": "../../images/module-icons/distribute-vertical.svg",
-  "is_available_for_new_content": true
+  "content_tags" : [ {
+    "name" : "LAYOUT",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "Just a module for adding some free vertical space when needed. You can adjust the height of the empty space.",
+  "categories" : [ "design" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306784271040,
+  "label" : "Vertical spacer",
+  "icon" : "../../images/module-icons/distribute-vertical.svg",
+  "is_available_for_new_content" : true
 }

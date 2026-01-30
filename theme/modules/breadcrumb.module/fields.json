@@ -1,55 +1,49 @@
-[
-  {
-    "id": "menu",
-    "name": "menu",
-    "label": "Menu",
-    "required": false,
-    "locked": false,
-    "type": "menu",
-    "display_width": null,
-    "default": "Select a menu"
-  },
-  {
-    "id": "root_text",
-    "name": "root_text",
-    "label": "Root item text",
-    "help_text": "Leave empty to hide.",
-    "required": false,
-    "locked": false,
-    "placeholder": "Home",
-    "allow_new_line": false,
-    "type": "text",
-    "display_width": null,
-    "default": "Home"
-  },
-  {
-    "id": "styles",
-    "name": "styles",
-    "label": "Styles",
-    "required": false,
-    "locked": false,
-    "children": [
-      {
-        "id": "styles.styling",
-        "name": "styling",
-        "label": "Styling",
-        "inline_help_text": "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-        "required": false,
-        "locked": false,
-        "display": "radio",
-        "choices": [["auto", "Auto"]],
-        "multiple": false,
-        "reordering_enabled": true,
-        "preset": null,
-        "type": "choice",
-        "display_width": null,
-        "default": "auto"
-      }
-    ],
-    "tab": "STYLE",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null
-  }
-]
+[ {
+  "id" : "menu",
+  "name" : "menu",
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "display_width" : null,
+  "default" : "Select a menu"
+}, {
+  "id" : "root_text",
+  "name" : "root_text",
+  "label" : "Root item text",
+  "help_text" : "Leave empty to hide.",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "Home",
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Home"
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.styling",
+    "name" : "styling",
+    "label" : "Styling",
+    "inline_help_text" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "auto", "Auto" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "auto"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

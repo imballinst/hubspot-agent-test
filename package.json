@@ -6,7 +6,7 @@
   "repository": "https://github.com/imballinst/hubspot-agent-test",
   "main": "index.js",
   "scripts": {
-    "fetch": "yarn hs cms fetch theme theme",
+    "fetch": "yarn hs cms fetch theme theme --overwrite",
     "upload": "yarn hs cms upload theme theme",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check"

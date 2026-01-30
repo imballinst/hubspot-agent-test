@@ -1,17 +1,15 @@
 {
-  "content_tags": [
-    {
-      "name": "TEXT",
-      "source": "USER"
-    }
-  ],
-  "global": false,
-  "content_types": ["LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST"],
-  "inline_help_text": "<p>Some sentences require special treatment. Use this module if you'd like to pop out an important sentence or quote. You can add a name at the bottom of the module, if you wish.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-  "categories": ["design", "media"],
-  "host_template_types": ["PAGE", "BLOG_POST", "BLOG_LISTING"],
-  "module_id": 306783804113,
-  "label": "Quote",
-  "icon": "../../images/module-icons/chat-quote-fill.svg",
-  "is_available_for_new_content": true
+  "content_tags" : [ {
+    "name" : "TEXT",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "<p>Some sentences require special treatment. Use this module if you'd like to pop out an important sentence or quote. You can add a name at the bottom of the module, if you wish.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "design", "media" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306783804113,
+  "label" : "Quote",
+  "icon" : "../../images/module-icons/chat-quote-fill.svg",
+  "is_available_for_new_content" : true
 }

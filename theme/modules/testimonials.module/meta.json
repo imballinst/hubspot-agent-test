@@ -1,17 +1,15 @@
 {
-  "content_tags": [
-    {
-      "name": "TEXT",
-      "source": "USER"
-    }
-  ],
-  "global": false,
-  "content_types": ["LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST"],
-  "inline_help_text": "<p>It's very important to let your visitors know about your current clients' thoughts in today's world. With this module, you can insert the reviews in a modern slider.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-  "categories": ["design", "media"],
-  "host_template_types": ["PAGE", "BLOG_POST", "BLOG_LISTING"],
-  "module_id": 306783804115,
-  "label": "Testimonials",
-  "icon": "../../images/module-icons/chat-dots-fill.svg",
-  "is_available_for_new_content": true
+  "content_tags" : [ {
+    "name" : "TEXT",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "<p>It's very important to let your visitors know about your current clients' thoughts in today's world. With this module, you can insert the reviews in a modern slider.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "design", "media" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306783804115,
+  "label" : "Testimonials",
+  "icon" : "../../images/module-icons/chat-dots-fill.svg",
+  "is_available_for_new_content" : true
 }

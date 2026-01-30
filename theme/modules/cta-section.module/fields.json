@@ -1,402 +1,354 @@
-[
-  {
-    "id": "image",
-    "name": "image",
-    "label": "Image",
-    "required": false,
-    "locked": false,
-    "responsive": false,
-    "resizable": false,
-    "show_loading": false,
-    "type": "image",
-    "display_width": null,
-    "default": {
-      "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/img-005.png",
-      "alt": "cta-section-image"
-    }
-  },
-  {
-    "id": "title",
-    "name": "title",
-    "label": "Title",
-    "required": false,
-    "locked": false,
-    "allow_new_line": false,
-    "type": "text",
-    "display_width": null,
-    "default": "Ask for a quote now!"
-  },
-  {
-    "id": "title_heading_type",
-    "name": "title_heading_type",
-    "label": "Title heading type",
-    "required": true,
-    "locked": false,
-    "display": "select",
-    "choices": [
-      ["h1", "H1"],
-      ["h2", "H2"],
-      ["h3", "H3"],
-      ["h4", "H4"],
-      ["h5", "H5"],
-      ["h6", "H6"]
-    ],
-    "multiple": false,
-    "reordering_enabled": true,
-    "preset": null,
-    "type": "choice",
-    "display_width": null,
-    "default": "h2"
-  },
-  {
-    "id": "text",
-    "name": "text",
-    "label": "Text",
-    "inline_help_text": "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has a rich text editor for this field. So you can add styles, links etc. where needed.",
-    "required": false,
-    "locked": false,
-    "allow_new_line": false,
-    "type": "text",
-    "display_width": null,
-    "default": "This is the last call for big chances and discounted prices. Get the most out of Focus theme today."
-  },
-  {
-    "id": "button_1",
-    "name": "button_1",
-    "label": "Button 1",
-    "required": false,
-    "locked": false,
-    "children": [
-      {
-        "id": "button_1.button_type",
-        "name": "button_type",
-        "label": "Button type",
-        "inline_help_text": "<strong>Tip:</strong> You can create and use more button designs with <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-        "required": true,
-        "locked": false,
-        "display": "select",
-        "choices": [
-          ["focus_primary_button", "Primary button"],
-          ["focus_secondary_button", "Secondary button"]
-        ],
-        "multiple": false,
-        "reordering_enabled": true,
-        "preset": null,
-        "type": "choice",
-        "display_width": null,
-        "default": "focus_primary_button"
-      },
-      {
-        "id": "button_1.link",
-        "name": "link",
-        "label": "Button link",
-        "inline_help_text": "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> allows you trigger a Pop-up CTA on button click.",
-        "required": false,
-        "locked": false,
-        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
-        "show_advanced_rel_options": false,
-        "type": "link",
-        "display_width": null,
-        "default": {
-          "url": {
-            "href": "",
-            "type": "EXTERNAL"
-          },
-          "no_follow": false,
-          "open_in_new_tab": false
-        }
-      },
-      {
-        "id": "button_1.button_text",
-        "name": "button_text",
-        "label": "Button text",
-        "required": false,
-        "locked": false,
-        "allow_new_line": false,
-        "type": "text",
-        "display_width": null,
-        "default": "Learn More"
-      }
-    ],
-    "tab": "CONTENT",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null
-  },
-  {
-    "id": "button_2",
-    "name": "button_2",
-    "label": "Button 2",
-    "required": false,
-    "locked": false,
-    "children": [
-      {
-        "id": "button_2.button_type",
-        "name": "button_type",
-        "label": "Button type",
-        "inline_help_text": "<strong>Tip:</strong> You can create and use more button designs with <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-        "required": true,
-        "locked": false,
-        "display": "select",
-        "choices": [
-          ["focus_primary_button", "Primary button"],
-          ["focus_secondary_button", "Secondary button"]
-        ],
-        "multiple": false,
-        "reordering_enabled": true,
-        "preset": null,
-        "type": "choice",
-        "display_width": null,
-        "default": "focus_secondary_button"
-      },
-      {
-        "id": "button_2.link",
-        "name": "link",
-        "label": "Button link",
-        "inline_help_text": "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> allows you trigger a Pop-up CTA on button click.",
-        "required": false,
-        "locked": false,
-        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
-        "show_advanced_rel_options": false,
-        "type": "link",
-        "display_width": null,
-        "default": {
-          "url": {
-            "href": "",
-            "type": "EXTERNAL"
-          },
-          "no_follow": false,
-          "open_in_new_tab": false
-        }
-      },
-      {
-        "id": "button_2.button_text",
-        "name": "button_text",
-        "label": "Button text",
-        "required": false,
-        "locked": false,
-        "allow_new_line": false,
-        "type": "text",
-        "display_width": null,
-        "default": "Get Quote"
-      }
-    ],
-    "tab": "CONTENT",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null
-  },
-  {
-    "id": "styles",
-    "name": "styles",
-    "label": "Styles",
-    "required": false,
-    "locked": false,
-    "children": [
-      {
-        "id": "styles.styling",
-        "name": "styling",
-        "label": "Styling",
-        "inline_help_text": "This module has limited styling options. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-        "required": false,
-        "locked": false,
-        "display": "radio",
-        "choices": [["limited", "Limited"]],
-        "multiple": false,
-        "reordering_enabled": true,
-        "preset": null,
-        "type": "choice",
-        "display_width": null,
-        "default": "limited"
-      },
-      {
-        "id": "styles.bg",
-        "name": "bg",
-        "label": "Background",
-        "required": false,
-        "locked": false,
-        "children": [
-          {
-            "id": "styles.bg.type",
-            "name": "type",
-            "label": "Background type",
-            "required": false,
-            "locked": false,
-            "display": "radio",
-            "choices": [
-              ["none", "None"],
-              ["color", "Color"],
-              ["image", "Image"],
-              ["gradient", "Gradient"]
-            ],
-            "multiple": false,
-            "reordering_enabled": true,
-            "preset": null,
-            "type": "choice",
-            "display_width": null,
-            "default": "color"
-          },
-          {
-            "id": "styles.bg.color",
-            "name": "color",
-            "label": "Background color",
-            "required": false,
-            "locked": false,
-            "visibility": {
-              "controlling_field": "styles.bg.type",
-              "controlling_field_path": null,
-              "controlling_value_regex": "color",
-              "property": null,
-              "operator": "EQUAL",
-              "access": null
-            },
-            "inherited_value": {
-              "property_value_paths": {
-                "color": "theme.colors.secondary.color"
-              }
-            },
-            "type": "color",
-            "display_width": null,
-            "default": {
-              "opacity": 100
-            }
-          },
-          {
-            "id": "styles.bg.image",
-            "name": "image",
-            "label": "Background image",
-            "required": false,
-            "locked": false,
-            "visibility": {
-              "controlling_field": "styles.bg.type",
-              "controlling_field_path": null,
-              "controlling_value_regex": "image",
-              "property": null,
-              "operator": "EQUAL",
-              "access": null
-            },
-            "type": "backgroundimage",
-            "display_width": null,
-            "default": {
-              "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/bg-image-001.jpg",
-              "background_position": "MIDDLE_CENTER",
-              "background_size": "cover"
-            }
-          },
-          {
-            "id": "styles.bg.gradient",
-            "name": "gradient",
-            "label": "Background gradient",
-            "required": false,
-            "locked": false,
-            "visibility": {
-              "controlling_field": "styles.bg.type",
-              "controlling_field_path": null,
-              "controlling_value_regex": "gradient",
-              "property": null,
-              "operator": "EQUAL",
-              "access": null
-            },
-            "type": "gradient",
-            "display_width": null,
-            "default": {
-              "colors": [
-                {
-                  "color": {
-                    "r": 0,
-                    "g": 0,
-                    "b": 0,
-                    "a": 1
-                  }
-                },
-                {
-                  "color": {
-                    "r": 255,
-                    "g": 255,
-                    "b": 255,
-                    "a": 1
-                  }
-                }
-              ],
-              "side_or_corner": {
-                "verticalSide": "BOTTOM",
-                "horizontalSide": null
-              }
-            }
-          }
-        ],
-        "tab": "STYLE",
-        "expanded": false,
-        "group_occurrence_meta": null,
-        "type": "group",
-        "display_width": null
-      },
-      {
-        "id": "styles.lens",
-        "name": "lens",
-        "label": "Lens color",
-        "required": false,
-        "locked": false,
-        "type": "color",
-        "display_width": null,
-        "default": {
-          "color": "#000000",
-          "opacity": 0
-        }
-      },
-      {
-        "id": "styles.title",
-        "name": "title",
-        "label": "Title color",
-        "required": false,
-        "locked": false,
-        "visibility": {
-          "controlling_field": null,
-          "controlling_field_path": null,
-          "controlling_value_regex": null,
-          "property": null,
-          "operator": null,
-          "access": null,
-          "hidden_subfields": {
-            "opacity": true
-          }
-        },
-        "type": "color",
-        "display_width": null,
-        "default": {
-          "color": "#FFFFFF"
-        }
-      },
-      {
-        "id": "styles.text",
-        "name": "text",
-        "label": "Text color",
-        "required": false,
-        "locked": false,
-        "visibility": {
-          "controlling_field": null,
-          "controlling_field_path": null,
-          "controlling_value_regex": null,
-          "property": null,
-          "operator": null,
-          "access": null,
-          "hidden_subfields": {
-            "opacity": true
-          }
-        },
-        "type": "color",
-        "display_width": null,
-        "default": {
-          "color": "#FFFFFF"
-        }
-      }
-    ],
-    "tab": "STYLE",
-    "expanded": false,
-    "group_occurrence_meta": null,
-    "type": "group",
-    "display_width": null
+[ {
+  "id" : "image",
+  "name" : "image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/img-005.png",
+    "alt" : "cta-section-image"
   }
-]
+}, {
+  "id" : "title",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Ask for a quote now!"
+}, {
+  "id" : "title_heading_type",
+  "name" : "title_heading_type",
+  "label" : "Title heading type",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h1", "H1" ], [ "h2", "H2" ], [ "h3", "H3" ], [ "h4", "H4" ], [ "h5", "H5" ], [ "h6", "H6" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "h2"
+}, {
+  "id" : "text",
+  "name" : "text",
+  "label" : "Text",
+  "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has a rich text editor for this field. So you can add styles, links etc. where needed.",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "This is the last call for big chances and discounted prices. Get the most out of Focus theme today."
+}, {
+  "id" : "button_1",
+  "name" : "button_1",
+  "label" : "Button 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "button_1.button_type",
+    "name" : "button_type",
+    "label" : "Button type",
+    "inline_help_text" : "<strong>Tip:</strong> You can create and use more button designs with <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "focus_primary_button", "Primary button" ], [ "focus_secondary_button", "Secondary button" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "focus_primary_button"
+  }, {
+    "id" : "button_1.link",
+    "name" : "link",
+    "label" : "Button link",
+    "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> allows you trigger a Pop-up CTA on button click.",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "no_follow" : false,
+      "open_in_new_tab" : false
+    }
+  }, {
+    "id" : "button_1.button_text",
+    "name" : "button_text",
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Learn More"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "button_2",
+  "name" : "button_2",
+  "label" : "Button 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "button_2.button_type",
+    "name" : "button_type",
+    "label" : "Button type",
+    "inline_help_text" : "<strong>Tip:</strong> You can create and use more button designs with <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "focus_primary_button", "Primary button" ], [ "focus_secondary_button", "Secondary button" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "focus_secondary_button"
+  }, {
+    "id" : "button_2.link",
+    "name" : "link",
+    "label" : "Button link",
+    "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> allows you trigger a Pop-up CTA on button click.",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "no_follow" : false,
+      "open_in_new_tab" : false
+    }
+  }, {
+    "id" : "button_2.button_text",
+    "name" : "button_text",
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Get Quote"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.styling",
+    "name" : "styling",
+    "label" : "Styling",
+    "inline_help_text" : "This module has limited styling options. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "limited", "Limited" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "limited"
+  }, {
+    "id" : "styles.bg",
+    "name" : "bg",
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "styles.bg.type",
+      "name" : "type",
+      "label" : "Background type",
+      "required" : false,
+      "locked" : false,
+      "display" : "radio",
+      "choices" : [ [ "none", "None" ], [ "color", "Color" ], [ "image", "Image" ], [ "gradient", "Gradient" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "color"
+    }, {
+      "id" : "styles.bg.color",
+      "name" : "color",
+      "label" : "Background color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "styles.bg.type",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "color",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "inherited_value" : {
+        "property_value_paths" : {
+          "color" : "theme.colors.secondary.color"
+        }
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "opacity" : 100
+      }
+    }, {
+      "id" : "styles.bg.image",
+      "name" : "image",
+      "label" : "Background image",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "styles.bg.type",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "image",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "backgroundimage",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/bg-image-001.jpg",
+        "background_position" : "MIDDLE_CENTER",
+        "background_size" : "cover"
+      }
+    }, {
+      "id" : "styles.bg.gradient",
+      "name" : "gradient",
+      "label" : "Background gradient",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "styles.bg.type",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "gradient",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "gradient",
+      "display_width" : null,
+      "default" : {
+        "colors" : [ {
+          "color" : {
+            "r" : 0,
+            "g" : 0,
+            "b" : 0,
+            "a" : 1
+          }
+        }, {
+          "color" : {
+            "r" : 255,
+            "g" : 255,
+            "b" : 255,
+            "a" : 1
+          }
+        } ],
+        "side_or_corner" : {
+          "verticalSide" : "BOTTOM",
+          "horizontalSide" : null
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null
+  }, {
+    "id" : "styles.lens",
+    "name" : "lens",
+    "label" : "Lens color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 0
+    }
+  }, {
+    "id" : "styles.title",
+    "name" : "title",
+    "label" : "Title color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#FFFFFF"
+    }
+  }, {
+    "id" : "styles.text",
+    "name" : "text",
+    "label" : "Text color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#FFFFFF"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]
