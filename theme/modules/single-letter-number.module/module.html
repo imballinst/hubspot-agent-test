@@ -1,0 +1,6 @@
+{% set align_class = " focus_centered" if module.align_content is equalto "center" else "" %}
+{% set content = module.letter|truncate(1, True, '') if module.content_type is equalto "letter" else module.number %}
+
+<div class="focus_module_single_letter_number_container{{ align_class }}">
+  <div class="focus_module_single_letter_number">{{ content }}</div>
+</div>

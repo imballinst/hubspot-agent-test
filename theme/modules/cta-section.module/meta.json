@@ -1,0 +1,15 @@
+{
+  "content_tags" : [ {
+    "name" : "CTA",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "<p>Create a call-to-action section with up to 2 buttons to attract your visitors.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "design", "media" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306784271046,
+  "label" : "CTA section",
+  "icon" : "../../images/module-icons/cta-section.svg",
+  "is_available_for_new_content" : true
+}

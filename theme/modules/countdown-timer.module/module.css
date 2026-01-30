@@ -1,0 +1,44 @@
+.focus_module_countdown_timer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  font-size: 96px;
+}
+
+.focus_module_countdown_timer-container span {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 1139px) {
+  .focus_module_countdown_timer-container {
+    gap: 5px;
+    font-size: 72px;
+  }
+
+  .focus_module_countdown_timer-container span {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .focus_module_countdown_timer-container {
+    gap: 5px;
+    font-size: 40px;
+  }
+
+  .focus_module_countdown_timer-container span {
+    font-size: 11px;
+    margin-top: 0px;
+  }
+
+  #mmct_duration {
+    gap: 5px;
+    font-size: 72px;
+  }
+}

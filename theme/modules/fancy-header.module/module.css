@@ -1,0 +1,36 @@
+.focus_module_fancy_header_container.focus_centered {
+  margin: 0 auto;
+}
+
+.focus_module_fancy_header {
+  display: inline-flex;
+  position: relative;
+  padding: 0;
+  max-width: 400px;
+  margin-bottom: 0;
+  font-size: 72px;
+}
+
+.focus_module_fancy_header.huge {
+  font-size: 96px;
+  max-width: 800px;
+  line-height: 1.2em;
+}
+
+.focus_module_fancy_header::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 4px;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .focus_module_fancy_header,
+  .focus_module_fancy_header.huge {
+    font-size: 48px;
+  }
+}

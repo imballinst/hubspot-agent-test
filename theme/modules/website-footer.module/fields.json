@@ -1,0 +1,407 @@
+[ {
+  "id" : "image",
+  "name" : "image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "image.image",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/focus-logo-white.svg",
+      "alt" : "focus-logo",
+      "size_type" : "exact",
+      "width" : 150
+    }
+  }, {
+    "id" : "image.text",
+    "name" : "text",
+    "label" : "Text below image",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "The most popular theme for HubSpot. Unlock the full power with <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus!</a>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "menus",
+  "name" : "menus",
+  "label" : "Menus",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "menus.menu",
+    "name" : "menu",
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "menus.menu.title",
+      "name" : "title",
+      "label" : "Menu title",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Title"
+    }, {
+      "id" : "menus.menu.menu",
+      "name" : "menu",
+      "label" : "Select a menu",
+      "required" : false,
+      "locked" : false,
+      "type" : "menu",
+      "display_width" : null,
+      "default" : "Select a menu"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "social_accounts",
+  "name" : "social_accounts",
+  "label" : "Social accounts",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "visibility" : {
+    "controlling_field" : "show_social",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "social_account",
+    "name" : "social_account",
+    "label" : "Social account",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "facebook-f", "Facebook" ], [ "x twitter", "X" ], [ "twitter", "Twitter" ], [ "instagram", "Instagram" ], [ "linkedin-in", "LinkedIn" ], [ "youtube", "YouTube" ], [ "pinterest-p", "Pinterest" ], [ "envelope", "Email" ], [ "link", "Website" ], [ "whatsapp", "Whatsapp" ], [ "custom_icon", "Custom icon" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "facebook-f"
+  }, {
+    "id" : "social_accounts.custom_icon",
+    "name" : "custom_icon",
+    "label" : "Custom icon",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "social_account",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "custom_icon",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "icon_set" : "fontawesome-5.0.10",
+    "type" : "icon",
+    "display_width" : null,
+    "default" : {
+      "name" : "hubspot"
+    }
+  }, {
+    "id" : "social_accounts.social_link",
+    "name" : "social_link",
+    "label" : "Social link",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "no_follow" : false,
+      "open_in_new_tab" : true,
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.facebook.com",
+        "type" : "EXTERNAL"
+      }
+    }
+  }, {
+    "id" : "social_accounts.accessibility",
+    "name" : "accessibility",
+    "label" : "Accessibility options",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "social_accounts.accessibility.title",
+      "name" : "title",
+      "label" : "Title",
+      "required" : true,
+      "locked" : false,
+      "placeholder" : "Follow us on Facebook",
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Follow us on Facebook"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "social_account" : "facebook-f",
+    "social_link" : {
+      "no_follow" : false,
+      "open_in_new_tab" : true,
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.facebook.com",
+        "type" : "EXTERNAL"
+      }
+    },
+    "accessibility" : {
+      "title" : "Follow us on Facebook"
+    }
+  }, {
+    "social_account" : "x twitter",
+    "social_link" : {
+      "no_follow" : false,
+      "open_in_new_tab" : true,
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.x.com",
+        "type" : "EXTERNAL"
+      }
+    },
+    "accessibility" : {
+      "title" : "Follow us on X"
+    }
+  }, {
+    "social_account" : "instagram",
+    "social_link" : {
+      "no_follow" : false,
+      "open_in_new_tab" : true,
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.instagram.com",
+        "type" : "EXTERNAL"
+      }
+    },
+    "accessibility" : {
+      "title" : "Follow us on Instagram"
+    }
+  } ]
+}, {
+  "id" : "text",
+  "name" : "text",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "text.text",
+    "name" : "text",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "Made with love by <a href='https://www.stuff-n-matters.com' target='_blank'>Stuff & Matters, Inc.</a> in the United States."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "show_hide",
+  "name" : "show_hide",
+  "label" : "Show/Hide elements",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "show_hide.image",
+    "name" : "image",
+    "label" : "Show image",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "show_hide.menus",
+    "name" : "menus",
+    "label" : "Show menus",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "show_social",
+    "name" : "social",
+    "label" : "Show social",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "show_hide.text",
+    "name" : "text",
+    "label" : "Show text",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "predefined_layouts",
+  "name" : "predefined_layouts",
+  "label" : "Layout",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "predefined_layouts.layout",
+    "name" : "layout",
+    "label" : "Choose a layout",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "mwf_layout1", "Layout 1" ], [ "mwf_layout2", "Layout 2" ], [ "mwf_layout3", "Layout 3" ], [ "mwf_layout4", "Layout 4" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "mwf_layout2"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "breakpoint",
+  "name" : "breakpoint",
+  "label" : "Mobile breakpoint",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "breakpoint.width",
+    "name" : "width",
+    "label" : "Breakpoint width",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "inherit", "Global site breakpoint width" ], [ "custom", "Custom" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "inherit"
+  }, {
+    "id" : "breakpoint.custom_width",
+    "name" : "custom_width",
+    "label" : "Custom breakpoint width",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "breakpoint.width",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "custom",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "slider",
+    "min" : 639,
+    "max" : 1279,
+    "step" : 1,
+    "suffix" : "px",
+    "type" : "number",
+    "display_width" : null,
+    "default" : 767
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.styling",
+    "name" : "styling",
+    "label" : "Styling",
+    "inline_help_text" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "auto", "Auto" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "auto"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

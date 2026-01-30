@@ -1,0 +1,70 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Services
+  screenshotPath: ../images/template-previews/services.png
+-->
+
+{% extends './layouts/base.html' %}
+
+{% block body %}
+{% dnd_area 'dnd_area_101' class='body-container body-container--services', label='Main section' %}
+
+  {# Page title #}
+
+  {% include_dnd_partial path='../sections/page-title.html'
+    context={
+      'section_margin_bottom': '0px',
+      'text': 'Services'
+    }
+  %}
+
+  {# Cards #}
+
+  {% dnd_section
+    background_color='#FFD126',
+    padding={
+      'default': { 'top': 100 }
+    }
+  %}
+    {% dnd_module path='../modules/cards' %}
+    {% end_dnd_module %}
+  {% end_dnd_section %}
+
+  {# Testimonials #}
+
+  {% include_dnd_partial path='../sections/testimonials.html'
+    context={
+      'section_padding_top': 100
+    }
+  %}
+
+  {# Clients #}
+
+  {% dnd_section
+    full_width=true,
+    padding={ 'left': 0, 'right': 0 },
+  %}
+    {% dnd_module path='../modules/clients' %}
+    {% end_dnd_module %}
+  {% end_dnd_section %}  
+
+  {# Pricing cards #}
+
+  {% include_dnd_partial path='../sections/pricing.html'
+    context={
+      'section_padding_top': 60,
+      'section_margin_bottom': 100
+    }
+  %}  
+
+  {# Call-to-action #}
+
+  {% include_dnd_partial path='../sections/call-to-action.html'
+    context={
+      'section_padding_bottom': '0px'
+    }
+  %}
+
+{% end_dnd_area %}
+{% endblock body %}

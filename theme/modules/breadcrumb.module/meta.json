@@ -1,0 +1,15 @@
+{
+  "content_tags" : [ {
+    "name" : "NAVIGATION",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "<p>Add breadcrumb navigation to your page.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "text" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306783804107,
+  "label" : "Breadcrumb",
+  "icon" : "../../images/module-icons/bread.svg",
+  "is_available_for_new_content" : true
+}

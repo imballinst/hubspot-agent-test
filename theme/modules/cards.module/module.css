@@ -1,0 +1,24 @@
+.focus_module_icon_card .card_icon svg {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.focus_module_icon_card_title_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.focus_module_icon_card_title {
+  font-size: 30px;
+}
+
+.focus_module_icon_card .button {
+  margin: 0 auto 0 0;
+}
+
+@media (max-width: 767px) {
+  .focus_module_icon_card_title {
+    font-size: 24px;
+  }
+}

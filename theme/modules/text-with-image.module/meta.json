@@ -1,0 +1,15 @@
+{
+  "content_tags" : [ {
+    "name" : "TEXT",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "<p>A multipurpose text section with an optional image and button.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "body_content", "design", "media" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306783804121,
+  "label" : "Text with image",
+  "icon" : "../../images/module-icons/file-richtext.svg",
+  "is_available_for_new_content" : true
+}

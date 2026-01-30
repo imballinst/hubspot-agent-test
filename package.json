@@ -1,0 +1,15 @@
+{
+  "name": "hubspot-agent-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/imballinst/hubspot-agent-test",
+  "author": "Try Ajitiono <ballinst@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.12.0",
+  "scripts": {
+    "fetch": "yarn hs cms fetch theme theme"
+  },
+  "dependencies": {
+    "@hubspot/cli": "7.11.2"
+  }
+}
