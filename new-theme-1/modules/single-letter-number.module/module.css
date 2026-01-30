@@ -1,0 +1,20 @@
+.focus_module_single_letter_number_container.focus_centered {
+  margin: 0 auto;
+}
+
+.focus_module_single_letter_number {
+  line-height: 1em;
+  display: inline-block;
+  font-size: 144px;
+  position: relative;
+}
+
+.focus_module_single_letter_number::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 4px;
+  bottom: -20px;
+  left: calc(50% - 15px);
+  border-radius: 8px;
+}

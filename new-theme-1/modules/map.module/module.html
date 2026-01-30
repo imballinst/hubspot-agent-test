@@ -1,0 +1,70 @@
+{% import '../../templates/partials/button.html' %}
+
+{% require_css %}
+    <style>
+        {% scope_css %}
+
+            .focus_module_map {
+                background: {{ module.styles.bg.color }};
+                color: {{ module.styles.text.color }};
+            }
+
+            .focus_module_map_content {
+                background: {{ module.styles.bg.color }};
+                max-width: {{ module.max_width }}px;
+                min-width: {{ module.min_width }}px;
+            }
+
+            .focus_module_map-title {
+                color: {{ module.styles.title.color }};
+            }
+            
+            .focus_module_map_frame {
+                height: {{ module.height }}px;
+            }
+
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}
+
+{% if !module.title and !module.text and !module.address and !module.phone and !module.button_toggle %}
+    {% set content_class = 'no-content' %}
+{% else %}
+    {% set content_class = module.map_layout %}
+    {% if module.map_layout == 'floating' or module.map_layout == 'floating_right_aligned' %}
+        {% set content_class = module.map_layout ~ ' mat_pri_cor mat_pri_bor mat_pri_sha' %}
+    {% endif %}
+{% endif %}
+
+<div class="focus_module_map">
+    <div class="focus_module_map_content {{ content_class }}">
+        {% if module.title %}
+            <{{ module.title_heading_type }} class="focus_module_map-title">{{ module.title }}</{{ module.title_heading_type }}>
+        {% endif %}
+        {% if module.text %}
+            <div class="focus_module_map-text">{{ module.text }}</div>
+        {% endif %}
+        {% if module.address %}
+            <div class="focus_module_map-address">{{ module.address }}</div>
+        {% endif %}
+        {% if module.phone %}
+            <div class="focus_module_map-phone">{{ module.phone }}</div>
+        {% endif %}
+        {% if module.button_toggle %}
+            {{ render_button({
+                'rb_href': module.button_options.button_link.url.href,
+                'rb_type': module.button_options.button_link.url.type,
+                'rb_follow': module.button_options.button_link.no_follow,
+                'rb_tab': module.button_options.button_link.open_in_new_tab,
+                'rb_class': 'button ' ~ module.button_options.button_type,
+                'rb_text': module.button_options.button_text,
+                'rb_feature': '',
+                'rb_social_icon': '',
+                'rb_acc_title': ''
+            }) }}
+        {% endif %}
+    </div>
+    <div class="focus_module_map_frame">
+        {{ module.map_code }}
+    </div>
+</div>

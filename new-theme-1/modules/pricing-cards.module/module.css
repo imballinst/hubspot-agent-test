@@ -1,0 +1,92 @@
+.mgi-pricing {
+  align-items: center;
+}
+
+.focus_module_pricing_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.focus_module_pricing_card.hmpc_badged {
+  padding: 80px 50px;
+  position: relative;
+}
+
+.focus_module_pricing_card_badge {
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 0 10px;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.focus_module_pricing_card_header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 30px 15px;
+}
+
+.focus_module_pricing_card_heading {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.focus_module_pricing_card_desc {
+  text-align: center;
+}
+
+.focus_module_pricing_card_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.focus_module_pricing_card_currency {
+  font-size: 72px;
+}
+
+.focus_module_pricing_card_amount {
+  font-size: 72px;
+  line-height: 1em;
+}
+
+.focus_module_pricing_card_features_hdr {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.pricing_icon {
+  width: 180px;
+  display: block;
+  margin: -140px auto 30px auto;
+}
+
+.focus_module_pricing_card.hmpc_badged .pricing_icon {
+  margin-top: -165px;
+}
+
+.focus_module_pricing_card_features ul {
+  padding: 0;
+}
+
+.focus_module_pricing_card_features li {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.focus_module_pricing_card_feature_additional {
+  font-size: 12px;
+  opacity: 0.5;
+  display: block;
+}
+
+.focus_module_pricing_card .button {
+  margin: 0 auto;
+}

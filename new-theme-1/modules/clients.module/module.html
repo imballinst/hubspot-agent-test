@@ -1,0 +1,197 @@
+{% if module.layout_type == 'grid' %}
+    {% import '../../templates/partials/listing/structure.html' %}
+{% elif module.layout_type == 'slider' %}
+    {% import '../../templates/partials/slider-renderer.html' %}
+{% endif %}
+    
+{% if bl == 'masonry2' or bl == 'masonry3' %}
+    {{ require_js(get_asset_url('../../js/packages/masonry.pkgd.min.js')) }}
+    {{ require_js(get_asset_url('../../js/packages/imagesloaded.pkgd.min.js')) }}
+    {{ require_js(get_asset_url('../../js/clients.js')) }}
+{% endif %}
+
+{% require_css %}
+    <style>
+        {% scope_css %}
+
+            {% set logo_filter_initial = module.styles.logo_initial %}
+            {% set logo_filter_hover = module.styles.logo_hover %}
+
+            .focus_module_clients_item {
+                background: {{ module.styles.box_bg.color}};
+                min-height: {{ module.box_height }}px;
+            }
+
+            .focus_module_clients_item:hover {
+                background: {{ module.styles.box_bg_hover.color}};
+            }
+
+            .focus_module_clients_img {
+                {% if logo_filter_initial == 'black' %}
+                    filter: brightness(0);
+                {% elif logo_filter_initial == 'white' %}
+                    filter: brightness(0) invert(1);
+                {% elif logo_filter_initial == 'grayscale' %}
+                    filter: grayscale(1);
+                {% endif %}
+            }
+
+            .focus_module_clients_item:hover .focus_module_clients_img {
+                {% if logo_filter_hover == 'black' %}
+                    filter: grayscale(0) brightness(0) invert(0);
+                {% elif logo_filter_hover == 'white' %}
+                    filter: grayscale(0) brightness(0) invert(1);
+                {% elif logo_filter_hover == 'grayscale' %}
+                    filter: grayscale(1) brightness(1) invert(0);
+                {% else %}
+                    filter: none;
+                {% endif %}
+            }
+
+            {% if module.layout_type == 'grid' %}
+
+                {% set m_spacing_spacing = 'custom' %}
+                {% set m_spacing_horizontal = 0 %}
+                {% set m_spacing_vertical = 0 %}
+
+                {% if m_spacing_spacing == 'custom' %}
+                    @media (min-width: 1139px) {
+                    {% if masonry_layout %}
+                        .focus_grid-gutter-sizer {
+                            width: {{ m_spacing_horizontal }}px;
+                        }
+
+                        .focus_grid-item {
+                            margin-bottom: {{ m_spacing_vertical }}px;
+                        }
+
+                        .focus_grid-masonry2 .focus_grid-sizer,
+                        .focus_grid-masonry2 .focus_grid-item {
+                            width: calc(50% - {{ m_spacing_horizontal/2 }}px);
+                        }
+
+                        .focus_grid-masonry3 .focus_grid-sizer,
+                        .focus_grid-masonry3 .focus_grid-item {
+                            width: calc(33.3333% - {{ m_spacing_horizontal*2/3 }}px);
+                        }
+                    {% else %}
+                        .focus_grid-inner {
+                            gap: {{ m_spacing_vertical }}px 0;
+                        }
+
+                        .focus_grid--2col.mgi-col1,
+                        .focus_grid--2_1col.mgi-2_1col-1,
+                        .focus_grid--2_3col.mgi-2_3col-1 {
+                            padding-right: {{ m_spacing_horizontal/2 }}px;
+                        }
+
+                        .focus_grid--2col.mgi-col2,
+                        .focus_grid--2_1col.mgi-2_1col-2,
+                        .focus_grid--2_3col.mgi-2_3col-2 {
+                            padding-left: {{ m_spacing_horizontal/2 }}px;
+                        }
+
+                        .focus_grid--3col.mgi-col1,
+                        .focus_grid--3_1col.mgi-3_1col-1,
+                        .focus_grid--3_2col.mgi-3_2col-1 {
+                            padding-right: {{ m_spacing_horizontal*2/3 }}px;
+                        }
+
+                        .focus_grid--3col.mgi-col2,
+                        .focus_grid--3_1col.mgi-3_1col-2,
+                        .focus_grid--3_2col.mgi-3_2col-2 {
+                            padding-left: {{ m_spacing_horizontal/3 }}px;
+                            padding-right: {{ m_spacing_horizontal/3 }}px;
+                        }
+
+                        .focus_grid--3col.mgi-col3,
+                        .focus_grid--3_1col.mgi-3_1col-3,
+                        .focus_grid--3_2col.mgi-3_2col-3 {
+                            padding-left: {{ m_spacing_horizontal*2/3 }}px;
+                        }
+                    {% endif %}
+                    }
+                {% endif %}
+
+            {% endif %}
+
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}
+
+{% if module.layout_type == 'grid' %}
+
+    {# Layout type: Grid #}
+
+    <div class="focus_grid-container{{ masonry_layout }}">
+
+        <section class="focus_grid-inner{{ masonry_layout }} focus_module_clients">
+
+                {% if masonry_layout %}
+                    <div class="focus_grid focus_grid-clients">
+                        <div class="focus_grid-sizer"></div>
+                        <div class="focus_grid-gutter-sizer"></div>
+                {% endif %}
+
+                {% for logo in module.logos %}
+
+                    {% if masonry_layout %}
+                        <div class="focus_grid-item">
+                    {% endif %}
+
+                    <div class="focus_grid-col focus_grid--{{ layouts[bl]['remaining_post_class'] }} {{ cycle_class(layouts[bl]['cycle_class']) }}">
+                        <div class="focus_grid-content focus_grid-content--{{ bl }} focus_module_clients_item">
+                            {% if logo.image.src %}   
+                                <img class="focus_module_clients_img" src="{{ logo.image.src }}" alt="{{ logo.image.alt }}" width="{{ module.logo_width }}" loading="lazy">
+                            {% endif %}
+                        </div>      
+                    </div>
+
+                    {% if masonry_layout %}
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
+
+                {% if masonry_layout %}
+                    </div>
+                {% endif %}
+
+        </section>
+
+    </div>
+
+{% elif module.layout_type == 'slider' %}
+
+    {# Layout type: Slider #}
+
+    <section class="focus_module_clients">
+
+        {% set data_splide = '{
+            "type":"loop",
+            "pagination":false,
+            "perPage":' ~ module.slider_settings.logos_per_slide ~ ',
+            "perMove":' ~ module.slider_settings.logos_per_slide ~ ',
+            "autoplay":' ~ module.slider_settings.autoplay ~ ',
+            "interval":' ~ module.slider_settings.wait ~ ',
+            "breakpoints":{"800": {"perPage": 2},"600": {"perPage": 1}}
+        }' %}
+
+        {% call render_slider(data_splide|replace('"', '&quot;')|replace(' ', '')) %}
+            {% for logo in module.logos %}
+                <div class="splide__slide">
+                    <div class="focus_module_clients_item">
+                        {% if logo.image.src %}   
+                            <img class="focus_module_clients_img" src="{{ logo.image.src }}" alt="{{ logo.image.alt }}" width="{{ module.logo_width }}" loading="lazy">
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endcall %}
+
+    </section>
+
+{% endif %}
+    
+
+<input id="m_info_fields-clients" type="hidden" data-masonry="{{ 'true' if masonry_layout else 'false' }}">

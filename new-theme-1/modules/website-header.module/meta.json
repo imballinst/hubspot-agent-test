@@ -1,0 +1,24 @@
+{
+  "content_tags" : [ {
+    "name" : "BRANDING",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "inline_help_text" : "<p>One module for the entire header.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "design", "functionality" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 306893489897,
+  "js_assets" : [ {
+    "autoload" : false,
+    "path" : "../../js/menu.js",
+    "name" : "menu.js"
+  }, {
+    "autoload" : false,
+    "path" : "../../js/language.js",
+    "name" : "language.js"
+  } ],
+  "label" : "Website header",
+  "icon" : "../../images/module-icons/header.svg",
+  "is_available_for_new_content" : true
+}

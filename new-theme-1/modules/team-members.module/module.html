@@ -1,0 +1,36 @@
+{% import '../../templates/partials/social-icons.html' %}
+{% import '../../templates/partials/listing/structure.html' %}
+
+<div class="focus_grid-container">
+
+  <section class="focus_grid-inner focus_module_team_members">
+
+    {% for member in module.member %}
+
+      <div class="focus_grid-col focus_grid--{{ layouts[module.column_count]['remaining_post_class'] }} {{ cycle_class(layouts[module.column_count]['cycle_class']) }}">
+        <div class="focus_grid-content focus_grid-content--{{ module.column_count }} focus_module_team_members_item mat_pri_bor mat_pri_cor mat_pri_sha">
+          {% if member.image.src %}   
+            <img class="focus_module_team_members_img" src="{{ member.image.src }}" alt="{{ member.image.alt }}" loading="lazy">
+          {% endif %}
+          <div class="focus_module_team_members_text">
+            {% if member.title %}
+              <{{ module.title_heading_type }} class="focus_module_team_members_title">{{ member.title }} {{ member.surname }}</{{ module.title_heading_type }}>
+            {% endif %}
+            {% if member.job %}
+              <p class="focus_module_team_members_job">{{ member.job }}</p>
+            {% endif %}
+            {% if member.bio %}
+              <p class="focus_module_team_members_bio">{{ member.bio }}</p>
+            {% endif %}
+            {% if member.social_toggle %}
+              {{ render_social_icons(member.social_accounts) }}
+            {% endif %}
+          </div>
+        </div>      
+      </div>
+
+    {% endfor %}
+
+  </section>
+
+</div>

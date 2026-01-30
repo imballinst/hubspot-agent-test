@@ -6,8 +6,8 @@
   "repository": "https://github.com/imballinst/hubspot-agent-test",
   "main": "index.js",
   "scripts": {
-    "fetch": "yarn hs cms fetch theme theme --overwrite",
-    "upload": "yarn hs cms upload theme theme"
+    "fetch": "yarn hs cms fetch new-theme-1 new-theme-1 --overwrite",
+    "upload": "yarn hs cms upload new-theme-1 new-theme-1"
   },
   "dependencies": {
     "@hubspot/cli": "7.11.2"

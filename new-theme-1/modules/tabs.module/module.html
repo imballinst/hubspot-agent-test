@@ -1,0 +1,44 @@
+{% import '../../templates/partials/button.html' %}
+
+<div class="focus_module_tabs">
+
+  <div class="focus_module_tabs_links">
+    {% for tab in module.tabs %}    
+      <a href="javascript:void(0);" class="focus_module_tabs_link" data-name="mmt_name{{ loop.index }}" id="mmt_id{{ loop.index }}">{{ tab.tab_title }}</a>
+    {% endfor %}
+  </div>
+
+  {% for tab in module.tabs %}
+    <div id="mmt_name{{ loop.index }}" class="focus_module_tabs_content{{ ' with-icon' if tab.media_type == 'icon' }}">
+      {% if tab.media_type == 'icon' %}  
+        {% icon
+          name='{{ tab.custom_icon.name }}'
+          style='{{ tab.custom_icon.type }}'
+          unicode='{{ tab.custom_icon.unicode }}'
+          purpose='decorative'
+          extra_classes='tab_icon'
+        %}
+      {% elif tab.media_type == 'image' %}  
+        <img class="focus_module_tabs_img" src="{{ tab.image.src }}" alt="{{ tab.image.alt }}" loading="lazy">
+      {% endif %}
+      <div class="focus_module_tabs_right">
+        <{{ module.title_heading_type }} class="focus_module_tabs_title">{{ tab.title }}</{{ module.title_heading_type }}>
+        <p class="focus_module_tabs_text">{{ tab.text }}</p>
+        {% if tab.button_toggle %}
+          {{ render_button({
+            'rb_href': tab.button_options.button_link.url.href,
+            'rb_type': tab.button_options.button_link.url.type,
+            'rb_follow': tab.button_options.button_link.no_follow,
+            'rb_tab': tab.button_options.button_link.open_in_new_tab,
+            'rb_class': 'button ' ~ tab.button_options.button_type,
+            'rb_text': tab.button_options.button_text,
+            'rb_feature': '',
+            'rb_social_icon': '',
+            'rb_acc_title': ''
+          }) }}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

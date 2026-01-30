@@ -1,0 +1,56 @@
+{% import '../../templates/partials/listing/structure.html' %}
+{% import '../../templates/partials/button.html' %}
+
+<div class="focus_grid-container">
+
+  <section class="focus_grid-inner">
+
+    {% for card in module.card %}
+
+      <div class="focus_grid-col focus_grid--{{ layouts[module.column_count]['remaining_post_class'] }} {{ cycle_class(layouts[module.column_count]['cycle_class']) }}">    
+
+        <div class="focus_grid-content focus_grid-content--{{ module.column_count }} focus_module_icon_card focus_module_container mat_pri_bor mat_pri_cor mat_pri_sha">
+
+          <div class="focus_module_icon_card_text">
+            <div class="focus_module_icon_card_title_icon">
+              {% if card.title %}
+                <{{ module.title_heading_type }} class="focus_module_icon_card_title">{{ card.title }}</{{ module.title_heading_type }}>
+              {% endif %}
+              {% if card.custom_icon.name %}  
+                {% icon
+                  name='{{ card.custom_icon.name }}'
+                  style='{{ card.custom_icon.type }}'
+                  unicode='{{ card.custom_icon.unicode }}'
+                  purpose='decorative'
+                  extra_classes='card_icon'
+                %}
+              {% endif %}
+            </div>
+            {% if card.text %}
+              <p>{{ card.text }}</p>
+            {% endif %}
+          </div>
+
+          {% if card.button_toggle %}
+            {{ render_button({
+              'rb_href': card.button_options.button_link.url.href,
+              'rb_type': card.button_options.button_link.url.type,
+              'rb_follow': card.button_options.button_link.no_follow,
+              'rb_tab': card.button_options.button_link.open_in_new_tab,
+              'rb_class': 'button',
+              'rb_text': card.button_options.button_text,
+              'rb_feature': '',
+              'rb_social_icon': '',
+              'rb_acc_title': ''
+            }) }}
+          {% endif %}
+
+        </div>
+
+      </div>
+
+    {% endfor %}
+
+  </section>
+
+</div>

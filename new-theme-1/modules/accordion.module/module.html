@@ -1,0 +1,30 @@
+<section class="focus_module_accordion mat_pri_bor mat_pri_cor mat_pri_sha">
+
+  {% for item in module.list %}    
+
+    <div class="focus_module_accordion_item">
+      <div class="focus_module_accordion_q">
+        <span class="focus_module_accordion_open">
+          {% icon
+            name='arrow-down'
+            style='SOLID'
+            unicode='f063'
+            purpose='decorative'            
+          %}
+        </span>
+        <span class="focus_module_accordion_close">
+          {% icon
+            name='arrow-up'
+            style='SOLID'
+            unicode='f062'
+            purpose='decorative'
+          %}
+        </span>
+        <p class="focus_module_accordion_title">{{ item.title }}</p>
+      </div>
+      <p class="focus_module_accordion_text focus_module_accordion_close">{{ item.text }}</p>
+    </div>
+
+  {% endfor %}
+
+</section>

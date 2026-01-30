@@ -1,0 +1,89 @@
+[ {
+  "id" : "text",
+  "name" : "text",
+  "label" : "Text",
+  "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has a rich text editor for this field. So you can add styles, links etc. where needed.",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "We love marketing stuff. We mean it."
+}, {
+  "id" : "owner",
+  "name" : "owner",
+  "label" : "Owner",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Chloe Sullivan, Founder"
+}, {
+  "id" : "image",
+  "name" : "image",
+  "label" : "Owner image",
+  "help_text" : "We recommend you to use a square image.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-006.png",
+    "alt" : "avatar-006"
+  }
+}, {
+  "id" : "quote_icon",
+  "name" : "quote_icon",
+  "label" : "Show quote icon",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "text_size",
+  "name" : "text_size",
+  "label" : "Text size",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "t_medium", "Medium" ], [ "t_big", "Big" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "t_big"
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.styling",
+    "name" : "styling",
+    "label" : "Styling",
+    "inline_help_text" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "auto", "Auto" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "auto"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null
+} ]

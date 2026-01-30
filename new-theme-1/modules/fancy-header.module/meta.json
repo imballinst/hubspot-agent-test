@@ -1,0 +1,15 @@
+{
+  "content_tags" : [ {
+    "name" : "RICH_TEXT",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "inline_help_text" : "<p>If you want to use a heading a bit different from the default ones, you can use this module.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories" : [ "body_content", "design", "text" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 306815087295,
+  "label" : "Fancy header",
+  "icon" : "../../images/module-icons/textarea-t.svg",
+  "is_available_for_new_content" : true
+}
