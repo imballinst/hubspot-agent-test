@@ -1,4 +1,5 @@
 {
+  "prettier.enable": false,
   "files.associations": {
     "*.html": "html-hubl",
     "*.css": "css-hubl"
