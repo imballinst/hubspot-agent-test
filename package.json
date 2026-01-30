@@ -7,9 +7,14 @@
   "license": "MIT",
   "packageManager": "yarn@4.12.0",
   "scripts": {
-    "fetch": "yarn hs cms fetch theme theme"
+    "fetch": "yarn hs cms fetch theme theme",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "@hubspot/cli": "7.11.2"
+  },
+  "devDependencies": {
+    "oxfmt": "0.27.0"
   }
 }
