@@ -2,8 +2,7 @@
   "global": false,
   "host_template_types": [
     "PAGE",
-    "BLOG_POST",
-    "LANDING_PAGE"
+    "BLOG_POST"
   ],
   "other_global_settings_present": false,
   "is_by_default_draggable": true,
