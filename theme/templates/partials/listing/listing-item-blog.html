@@ -3,86 +3,78 @@
   isAvailableForNewContent: false
 -->
 
-{% macro render_list_item() %}
+{% macro render_list_item() %} {# Article content #}
 
-    {# Article content #}
+<div class="focus_grid-content focus_grid-content--{{ bl }} focus_grid-blog_item">
+  {# Featured image #} {% if content.featured_image and module.show_hide.featured_image %}
+  <a
+    class="mgiw-list focus_grid-image-wrapper focus_grid-image-wrapper--{{ bl }}"
+    href="{{ content.absolute_url }}"
+    aria-label="{% if content.featured_image_alt_text %}Featured image: {{ content.featured_image_alt_text }} - {% endif %}Read full post: {{ content.name }}"
+  >
+    <img
+      class="focus_grid-image focus_grid-image--{{ bl }}"
+      src="{{ content.featured_image }}"
+      loading="lazy"
+      alt="{{ content.featured_image_alt_text }}"
+      width="{{ bl == 'small' ? '100%' : '100%' }}"
+    />
+  </a>
+  {% endif %}
 
-    <div class="focus_grid-content focus_grid-content--{{ bl }} focus_grid-blog_item">
-
-        {# Featured image #}
-
-        {% if content.featured_image and module.show_hide.featured_image %}
-            <a class="mgiw-list focus_grid-image-wrapper focus_grid-image-wrapper--{{ bl }}" href="{{ content.absolute_url }}" aria-label="{% if content.featured_image_alt_text %}Featured image: {{ content.featured_image_alt_text }} - {% endif %}Read full post: {{ content.name }}">
-                <img class="focus_grid-image focus_grid-image--{{ bl }}" src="{{ content.featured_image }}" loading="lazy" alt="{{ content.featured_image_alt_text }}" width="{{ bl == 'small' ? '100%' : '100%' }}">
-            </a>
-        {% endif %}
-
-        <div class="focus_grid-blog_item_inner">
-
-            {# Featured image #}
-
-            {% if content.featured_image and module.show_hide.featured_image %}
-                <a class="mgiw-box focus_grid-image-wrapper focus_grid-image-wrapper--{{ bl }}" href="{{ content.absolute_url }}" aria-label="{% if content.featured_image_alt_text %}Featured image: {{ content.featured_image_alt_text }} - {% endif %}Read full post: {{ content.name }}">
-                    <img class="focus_grid-image focus_grid-image--{{ bl }}" src="{{ content.featured_image }}" loading="lazy" alt="{{ content.featured_image_alt_text }}" width="{{ bl == 'small' ? '100%' : '100%' }}">
-                </a>
-            {% endif %}
-
-            {# Title #}
-
-            {% if module.show_hide.title %}
-                <h2 class="focus_grid-title"><a class="focus_grid-title-link" href="{{ content.absolute_url }}">{{ content.name }}</a></h2>
-            {% endif %}
-
-            {% if module.show_hide.publish_date or (module.show_hide.author and content.blog_author) %}
-                <div class="focus_grid-date_bar">
-
-                    {# Publish date #}
-
-                    {% if module.show_hide.publish_date %}
-                        <time class="focus_grid-timestamp" datetime="{{ content.publish_date }}">
-                            {{ content.publish_date|format_datetime('d MMM YYY') }}
-                        </time>
-                    {% endif %}
-
-                    {# Author #}
-
-                    {% if module.show_hide.author and content.blog_author %}
-                        <div class="focus_grid-author">
-                            <a class="focus_grid-author-name" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">{{ content.blog_author.display_name }}</a>
-                        </div>
-                    {% endif %}
-
-                </div>
-            {% endif %}
-
-            {# Summary #}
-
-            {% if module.show_hide.description and content.post_list_content %}
-                <div class="focus_grid-summary">
-                    {{ content.post_list_content|truncatehtml(100) }}
-                </div>
-            {% endif %}
-
-            {# Read more button #}
-
-            {% if module.show_hide.button %}
-                <div class="focus_grid-button-wrapper focus_module_container">
-                    <a class="focus_grid-button button" href="{{ content.absolute_url }}">{{ module.show_hide.button_text }}</a>
-                </div>
-            {% endif %}
-
-            {# Tags #}
-
-            {% if module.show_hide.tags and content.tag_list %}
-                <div class="focus_grid-tags">
-                    {% for tag in content.tag_list %}
-                        <a class="focus_grid-tag" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if !loop.last %}<span>, </span>{% endif %}
-                    {% endfor %}
-                </div>
-            {% endif %}
-
-        </div>
-
+  <div class="focus_grid-blog_item_inner">
+    {# Featured image #} {% if content.featured_image and module.show_hide.featured_image %}
+    <a
+      class="mgiw-box focus_grid-image-wrapper focus_grid-image-wrapper--{{ bl }}"
+      href="{{ content.absolute_url }}"
+      aria-label="{% if content.featured_image_alt_text %}Featured image: {{ content.featured_image_alt_text }} - {% endif %}Read full post: {{ content.name }}"
+    >
+      <img
+        class="focus_grid-image focus_grid-image--{{ bl }}"
+        src="{{ content.featured_image }}"
+        loading="lazy"
+        alt="{{ content.featured_image_alt_text }}"
+        width="{{ bl == 'small' ? '100%' : '100%' }}"
+      />
+    </a>
+    {% endif %} {# Title #} {% if module.show_hide.title %}
+    <h2 class="focus_grid-title">
+      <a class="focus_grid-title-link" href="{{ content.absolute_url }}">{{ content.name }}</a>
+    </h2>
+    {% endif %} {% if module.show_hide.publish_date or (module.show_hide.author and
+    content.blog_author) %}
+    <div class="focus_grid-date_bar">
+      {# Publish date #} {% if module.show_hide.publish_date %}
+      <time class="focus_grid-timestamp" datetime="{{ content.publish_date }}">
+        {{ content.publish_date|format_datetime('d MMM YYY') }}
+      </time>
+      {% endif %} {# Author #} {% if module.show_hide.author and content.blog_author %}
+      <div class="focus_grid-author">
+        <a
+          class="focus_grid-author-name"
+          href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"
+          rel="author"
+          >{{ content.blog_author.display_name }}</a
+        >
+      </div>
+      {% endif %}
     </div>
+    {% endif %} {# Summary #} {% if module.show_hide.description and content.post_list_content %}
+    <div class="focus_grid-summary">{{ content.post_list_content|truncatehtml(100) }}</div>
+    {% endif %} {# Read more button #} {% if module.show_hide.button %}
+    <div class="focus_grid-button-wrapper focus_module_container">
+      <a class="focus_grid-button button" href="{{ content.absolute_url }}"
+        >{{ module.show_hide.button_text }}</a
+      >
+    </div>
+    {% endif %} {# Tags #} {% if module.show_hide.tags and content.tag_list %}
+    <div class="focus_grid-tags">
+      {% for tag in content.tag_list %}
+      <a class="focus_grid-tag" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{%
+      if !loop.last %}<span>, </span>{% endif %} {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
 
 {% endmacro %}

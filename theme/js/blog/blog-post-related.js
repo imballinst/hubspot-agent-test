@@ -29,7 +29,7 @@ var blog_post_formatter = function (blogposts) {
     }
     formatted += '<div class="focus_widget_post_item-text">';
     formatted += `<h4 class="focus_widget_post_item-title">${blogpost.name}</h4>`;
-    formatted += '<time class="focus_widget_post_item-date">' + final_date_output + '</time>';
+    formatted += '<time class="focus_widget_post_item-date">' + final_date_output + "</time>";
     formatted += "</div></a></div>";
     formatted += "</article>";
     inc = ++inc % states.length;

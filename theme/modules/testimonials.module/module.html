@@ -1,28 +1,24 @@
 {% import '../../templates/partials/slider-renderer.html' %}
 
 <div class="focus_module_testimonial">
-  {% call render_slider() %}
-    {% for review in module.review %} 
-      <div class="splide__slide">
-        <div class="focus_module_testimonial_container">
-          <div class="focus_module_testimonial_img">
-            {% if review.image.src %}
-              <img src="{{ review.image.src }}" alt="{{ review.image.alt }}">
-            {% endif %}
-            <div class="focus_module_testimonial_score{{ ' no-avatar' if !review.image.src }} mat_pri_cor mat_pri_sha">
-              {{ review.review_score|float }}
-            </div>
-          </div>
-          <div class="focus_module_testimonial_text">
-            <p class="focus_module_testimonial_review">
-              {{ review.review }}
-            </p>
-            <div class="focus_module_testimonial_owner">
-              {{ review.owner }}
-            </div>
-          </div>
+  {% call render_slider() %} {% for review in module.review %}
+  <div class="splide__slide">
+    <div class="focus_module_testimonial_container">
+      <div class="focus_module_testimonial_img">
+        {% if review.image.src %}
+        <img src="{{ review.image.src }}" alt="{{ review.image.alt }}" />
+        {% endif %}
+        <div
+          class="focus_module_testimonial_score{{ ' no-avatar' if !review.image.src }} mat_pri_cor mat_pri_sha"
+        >
+          {{ review.review_score|float }}
         </div>
       </div>
-    {% endfor %}
-  {% endcall %}
+      <div class="focus_module_testimonial_text">
+        <p class="focus_module_testimonial_review">{{ review.review }}</p>
+        <div class="focus_module_testimonial_owner">{{ review.owner }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %} {% endcall %}
 </div>

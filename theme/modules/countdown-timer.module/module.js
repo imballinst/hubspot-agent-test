@@ -52,7 +52,9 @@ function startDate(countDownDate) {
     // If the count down is over, write some text
     if (distance < 0) {
       clearInterval(m_int);
-      document.getElementById("mmct_date").innerHTML = document.getElementById("mmct_date").getAttribute("data-expired");
+      document.getElementById("mmct_date").innerHTML = document
+        .getElementById("mmct_date")
+        .getAttribute("data-expired");
     }
   }, 1000);
 }
@@ -82,14 +84,17 @@ function startTimer(duration, display) {
 window.onload = function () {
   // Duration
   if (document.getElementById("mmct_duration")) {
-    var duration_min = 60 * parseInt(document.getElementById("mmct_duration").getAttribute("data-duration"));
+    var duration_min =
+      60 * parseInt(document.getElementById("mmct_duration").getAttribute("data-duration"));
     var display = document.querySelector("#mmct_duration");
     startTimer(duration_min, display);
   }
 
   // Date
   if (document.getElementById("mmct_date")) {
-    var targetDate = new Date(document.getElementById("mmct_date").getAttribute("data-date").replace(" ", "T") + "Z").getTime();
+    var targetDate = new Date(
+      document.getElementById("mmct_date").getAttribute("data-date").replace(" ", "T") + "Z",
+    ).getTime();
     startDate(targetDate);
   }
 };

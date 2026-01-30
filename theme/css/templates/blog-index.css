@@ -1,0 +1,31 @@
+/* Blog Index Template Styles */
+
+.body-container--blog-hero {
+  background-color: transparent;
+  padding: 0;
+}
+
+.body-container--blog-listing {
+  background-color: transparent;
+  padding: 2rem 0;
+}
+
+.blog-posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.blog-post-item {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .blog-posts-container {
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+}

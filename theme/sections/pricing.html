@@ -6,192 +6,40 @@
   description: "Pricing cards for your plans."
 -->
 
-{% dnd_section
-    padding={ 
-      'default': { 'top': context.section_padding_top }
-    },
-    margin={ 
-      'default': { 'bottom': context.section_margin_bottom }
-    },
-    background_color={{ context.background_color }}
-%}
-    {% dnd_column %}
-
-        {# Title #}
-
-        {% dnd_row
-            margin={ 'bottom': 180 }
-        %}
-            {% dnd_module path='../modules/fancy-header'
-                text={{ context.text || 'Pricing' }},
-                huge={{ context.huge || false }},
-                styles={
-                    'color': {
-                        'color': context.color || theme.typography.headings.h1.font_style.color
-                    }
-                }
-            %}
-            {% end_dnd_module %}
-        {% end_dnd_row %}
-
-        {# Pricing cards #}
-
-        {% dnd_row %}
-            {% dnd_module path='../modules/pricing-cards'
-                cards=[
-                    {
-                        "tier": "Personal",
-                        "tier_heading_type": "h2",
-                        "price": "19",
-                        "currency": "$",
-                        "description": "For teams that need additional security, control and support.",
-                        "image": {
-                            "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/pricing-001.png",
-                            "alt" : "pricing-001"
-                        },
-                        "features": [
-                            {
-                                "feature": "First feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Second feature is a bit longer than other features.",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Third feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Fourth feature",
-                                "additional": "Additional fees may apply.",
-                            },
-                            {
-                                "feature": "Fifth feature",
-                                "additional": "",
-                            }
-                        ],
-                        "badge_toggle": false,
-                        "button_toggle": true,
-                        "button_options": {
-                            "button_text": "Buy product",
-                            "button_link": {
-                                "url": {
-                                    "href": "",
-                                    "type": "EXTERNAL"
-                                },
-                                "no_follow": false,
-                                "open_in_new_tab": false
-                                }
-                            }
-                        },
-                        {
-                        "tier": "Business",
-                        "tier_heading_type": "h2",
-                        "price": "49",
-                        "currency": "$",
-                        "description": "For teams that need additional security, control and support.",
-                        "image": {
-                            "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/pricing-002.png",
-                            "alt" : "pricing-002"
-                        },
-                        "features": [
-                            {
-                                "feature": "First feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Second feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Third feature is a bit longer than other features.",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Fourth feature",
-                                "additional": "Additional fees may apply.",
-                            },
-                            {
-                                "feature": "Fifth feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Sixth feature",
-                                "additional": "International shipping.",
-                            },
-                            {
-                                "feature": "Seventh feature",
-                                "additional": "",
-                            }
-                        ],
-                        "badge_toggle": true,
-                        "badge_options": {
-                            "badge_text": "Recommended"
-                        },
-                        "button_toggle": true,
-                        "button_options": {
-                            "button_text": "Buy product",
-                            "button_link": {
-                                "url": {
-                                    "href": "",
-                                    "type": "EXTERNAL"
-                                },
-                                "no_follow": false,
-                                "open_in_new_tab": false
-                                }
-                            }
-                        },
-                        {
-                        "tier": "Custom",
-                        "tier_heading_type": "h2",
-                        "price": "199",
-                        "currency": "$",
-                        "description": "For teams that need additional security, control and support.",
-                        "image": {
-                            "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/pricing-003.png",
-                            "alt" : "pricing-003"
-                        },
-                        "features": [
-                            {
-                                "feature": "First feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Second feature",
-                                "additional": "For the USA only.",
-                            },
-                            {
-                                "feature": "Third feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Fourth feature",
-                                "additional": "",
-                            },
-                            {
-                                "feature": "Fifth feature is a bit longer than other features.",
-                                "additional": "",
-                            }
-                        ],
-                        "badge_toggle": false,
-                        "button_toggle": true,
-                        "button_options": {
-                            "button_text": "Buy product",
-                            "button_link": {
-                                "url": {
-                                    "href": "",
-                                    "type": "EXTERNAL"
-                                },
-                                "no_follow": false,
-                                "open_in_new_tab": false
-                            }
-                        }
-                    }
-                ]
-            %}
-            {% end_dnd_module %}
-        {% end_dnd_row %}
-        
-    {% end_dnd_column %}
-{% end_dnd_section %}
+{% dnd_section padding={ 'default': { 'top': context.section_padding_top } }, margin={ 'default': {
+'bottom': context.section_margin_bottom } }, background_color={{ context.background_color }} %} {%
+dnd_column %} {# Title #} {% dnd_row margin={ 'bottom': 180 } %} {% dnd_module
+path='../modules/fancy-header' text={{ context.text || 'Pricing' }}, huge={{ context.huge || false
+}}, styles={ 'color': { 'color': context.color || theme.typography.headings.h1.font_style.color } }
+%} {% end_dnd_module %} {% end_dnd_row %} {# Pricing cards #} {% dnd_row %} {% dnd_module
+path='../modules/pricing-cards' cards=[ { "tier": "Personal", "tier_heading_type": "h2", "price":
+"19", "currency": "$", "description": "For teams that need additional security, control and
+support.", "image": { "src" :
+"https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/pricing-001.png", "alt" :
+"pricing-001" }, "features": [ { "feature": "First feature", "additional": "", }, { "feature":
+"Second feature is a bit longer than other features.", "additional": "", }, { "feature": "Third
+feature", "additional": "", }, { "feature": "Fourth feature", "additional": "Additional fees may
+apply.", }, { "feature": "Fifth feature", "additional": "", } ], "badge_toggle": false,
+"button_toggle": true, "button_options": { "button_text": "Buy product", "button_link": { "url": {
+"href": "", "type": "EXTERNAL" }, "no_follow": false, "open_in_new_tab": false } } }, { "tier":
+"Business", "tier_heading_type": "h2", "price": "49", "currency": "$", "description": "For teams
+that need additional security, control and support.", "image": { "src" :
+"https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/pricing-002.png", "alt" :
+"pricing-002" }, "features": [ { "feature": "First feature", "additional": "", }, { "feature":
+"Second feature", "additional": "", }, { "feature": "Third feature is a bit longer than other
+features.", "additional": "", }, { "feature": "Fourth feature", "additional": "Additional fees may
+apply.", }, { "feature": "Fifth feature", "additional": "", }, { "feature": "Sixth feature",
+"additional": "International shipping.", }, { "feature": "Seventh feature", "additional": "", } ],
+"badge_toggle": true, "badge_options": { "badge_text": "Recommended" }, "button_toggle": true,
+"button_options": { "button_text": "Buy product", "button_link": { "url": { "href": "", "type":
+"EXTERNAL" }, "no_follow": false, "open_in_new_tab": false } } }, { "tier": "Custom",
+"tier_heading_type": "h2", "price": "199", "currency": "$", "description": "For teams that need
+additional security, control and support.", "image": { "src" :
+"https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/pricing-003.png", "alt" :
+"pricing-003" }, "features": [ { "feature": "First feature", "additional": "", }, { "feature":
+"Second feature", "additional": "For the USA only.", }, { "feature": "Third feature", "additional":
+"", }, { "feature": "Fourth feature", "additional": "", }, { "feature": "Fifth feature is a bit
+longer than other features.", "additional": "", } ], "badge_toggle": false, "button_toggle": true,
+"button_options": { "button_text": "Buy product", "button_link": { "url": { "href": "", "type":
+"EXTERNAL" }, "no_follow": false, "open_in_new_tab": false } } } ] %} {% end_dnd_module %} {%
+end_dnd_row %} {% end_dnd_column %} {% end_dnd_section %}

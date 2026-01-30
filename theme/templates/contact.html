@@ -5,30 +5,9 @@
   screenshotPath: ../images/template-previews/contact.png
 -->
 
-{% extends './layouts/base.html' %}
-
-{% block body %}
-{% dnd_area 'dnd_area_101' class='body-container body-container--contact', label='Main section' %}
-
-  {# Page title #}
-
-  {% include_dnd_partial path='../sections/page-title.html'
-    context={
-      'text': 'Contact'
-    }
-  %}
-
-  {# Contact info #}
-
-  {% include_dnd_partial path='../sections/contact-info.html' %}
-
-  {# Questions & answers #}
-
-  {% include_dnd_partial path='../sections/questions-answers.html'
-    context={
-      'section_margin_bottom': '0px'
-    }
-  %}
-
-{% end_dnd_area %}
-{% endblock body %}
+{% extends './layouts/base.html' %} {% block body %} {% dnd_area 'dnd_area_101'
+class='body-container body-container--contact', label='Main section' %} {# Page title #} {%
+include_dnd_partial path='../sections/page-title.html' context={ 'text': 'Contact' } %} {# Contact
+info #} {% include_dnd_partial path='../sections/contact-info.html' %} {# Questions & answers #} {%
+include_dnd_partial path='../sections/questions-answers.html' context={ 'section_margin_bottom':
+'0px' } %} {% end_dnd_area %} {% endblock body %}

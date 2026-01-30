@@ -1,122 +1,136 @@
-[ {
-  "id" : "review",
-  "name" : "review",
-  "label" : "Reviews",
-  "required" : false,
-  "locked" : false,
-  "occurrence" : {
-    "min" : 1,
-    "max" : null,
-    "sorting_label_field" : null,
-    "default" : 3
+[
+  {
+    "id": "review",
+    "name": "review",
+    "label": "Reviews",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 3
+    },
+    "children": [
+      {
+        "id": "review.review",
+        "name": "review",
+        "label": "Review",
+        "inline_help_text": "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has a rich text editor for this field. So you can add styles, links etc. where needed.",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": "It was a great experience working with Focus theme. We highly recommend it! Far far away, behind the word mountains, far from the countries Vokalia."
+      },
+      {
+        "id": "review.review_score",
+        "name": "review_score",
+        "label": "Review score",
+        "inline_help_text": "<strong>Tip:</strong> You can also use stars instead of points in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+        "required": false,
+        "locked": false,
+        "display": "text",
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "type": "number",
+        "display_width": null,
+        "default": 9.7
+      },
+      {
+        "id": "review.owner",
+        "name": "owner",
+        "label": "Owner",
+        "required": false,
+        "locked": false,
+        "allow_new_line": false,
+        "type": "text",
+        "display_width": null,
+        "default": "Chris Joe Martin"
+      },
+      {
+        "id": "review.image",
+        "name": "image",
+        "label": "Owner Image",
+        "help_text": "We recommend you to use same sized and square images for all slides.",
+        "required": false,
+        "locked": false,
+        "responsive": false,
+        "resizable": false,
+        "show_loading": false,
+        "type": "image",
+        "display_width": null,
+        "default": {
+          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-007.png",
+          "alt": "avatar-007"
+        }
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null,
+    "default": [
+      {
+        "image": {
+          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-007.png",
+          "alt": "avatar-007"
+        },
+        "review": "It was a great experience working with Focus theme. We highly recommend it! Far far away, behind the word mountains, far from the countries Vokalia.",
+        "review_score": 9.7,
+        "owner": "Walter Craftson, Acme"
+      },
+      {
+        "image": {
+          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-004.png",
+          "alt": "avatar-004"
+        },
+        "review": "Far far away, behind the word mountains, far from the countries and Consonantia, live the blind texts. It was a great experience working with Focus theme.",
+        "review_score": 8.5,
+        "owner": "Cole Sullivan"
+      },
+      {
+        "image": {
+          "src": "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-002.png",
+          "alt": "avatar-002"
+        },
+        "review": "It was a great experience working with Focus theme. We highly recommend it! Far far away, behind the word mountains, far from the countries Vokalia.",
+        "review_score": 9.6,
+        "owner": "Margaret Fitch, Acme"
+      }
+    ]
   },
-  "children" : [ {
-    "id" : "review.review",
-    "name" : "review",
-    "label" : "Review",
-    "inline_help_text" : "<strong>Tip:</strong> <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a> has a rich text editor for this field. So you can add styles, links etc. where needed.",
-    "required" : false,
-    "locked" : false,
-    "allow_new_line" : false,
-    "type" : "text",
-    "display_width" : null,
-    "default" : "It was a great experience working with Focus theme. We highly recommend it! Far far away, behind the word mountains, far from the countries Vokalia."
-  }, {
-    "id" : "review.review_score",
-    "name" : "review_score",
-    "label" : "Review score",
-    "inline_help_text" : "<strong>Tip:</strong> You can also use stars instead of points in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-    "required" : false,
-    "locked" : false,
-    "display" : "text",
-    "min" : 0,
-    "max" : 10,
-    "step" : 0.1,
-    "type" : "number",
-    "display_width" : null,
-    "default" : 9.7
-  }, {
-    "id" : "review.owner",
-    "name" : "owner",
-    "label" : "Owner",
-    "required" : false,
-    "locked" : false,
-    "allow_new_line" : false,
-    "type" : "text",
-    "display_width" : null,
-    "default" : "Chris Joe Martin"
-  }, {
-    "id" : "review.image",
-    "name" : "image",
-    "label" : "Owner Image",
-    "help_text" : "We recommend you to use same sized and square images for all slides.",
-    "required" : false,
-    "locked" : false,
-    "responsive" : false,
-    "resizable" : false,
-    "show_loading" : false,
-    "type" : "image",
-    "display_width" : null,
-    "default" : {
-      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-007.png",
-      "alt" : "avatar-007"
-    }
-  } ],
-  "tab" : "CONTENT",
-  "expanded" : false,
-  "group_occurrence_meta" : null,
-  "type" : "group",
-  "display_width" : null,
-  "default" : [ {
-    "image" : {
-      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-007.png",
-      "alt" : "avatar-007"
-    },
-    "review" : "It was a great experience working with Focus theme. We highly recommend it! Far far away, behind the word mountains, far from the countries Vokalia.",
-    "review_score" : 9.7,
-    "owner" : "Walter Craftson, Acme"
-  }, {
-    "image" : {
-      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-004.png",
-      "alt" : "avatar-004"
-    },
-    "review" : "Far far away, behind the word mountains, far from the countries and Consonantia, live the blind texts. It was a great experience working with Focus theme.",
-    "review_score" : 8.5,
-    "owner" : "Cole Sullivan"
-  }, {
-    "image" : {
-      "src" : "https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/avatar-002.png",
-      "alt" : "avatar-002"
-    },
-    "review" : "It was a great experience working with Focus theme. We highly recommend it! Far far away, behind the word mountains, far from the countries Vokalia.",
-    "review_score" : 9.6,
-    "owner" : "Margaret Fitch, Acme"
-  } ]
-}, {
-  "id" : "styles",
-  "name" : "styles",
-  "label" : "Styles",
-  "required" : false,
-  "locked" : false,
-  "children" : [ {
-    "id" : "styles.styling",
-    "name" : "styling",
-    "label" : "Styling",
-    "inline_help_text" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-    "required" : false,
-    "locked" : false,
-    "display" : "radio",
-    "choices" : [ [ "auto", "Auto" ] ],
-    "multiple" : false,
-    "reordering_enabled" : true,
-    "preset" : null,
-    "type" : "choice",
-    "display_width" : null,
-    "default" : "auto"
-  } ],
-  "tab" : "STYLE",
-  "expanded" : false,
-  "group_occurrence_meta" : null,
-  "type" : "group",
-  "display_width" : null
-} ]
+  {
+    "id": "styles",
+    "name": "styles",
+    "label": "Styles",
+    "required": false,
+    "locked": false,
+    "children": [
+      {
+        "id": "styles.styling",
+        "name": "styling",
+        "label": "Styling",
+        "inline_help_text": "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+        "required": false,
+        "locked": false,
+        "display": "radio",
+        "choices": [["auto", "Auto"]],
+        "multiple": false,
+        "reordering_enabled": true,
+        "preset": null,
+        "type": "choice",
+        "display_width": null,
+        "default": "auto"
+      }
+    ],
+    "tab": "STYLE",
+    "expanded": false,
+    "group_occurrence_meta": null,
+    "type": "group",
+    "display_width": null
+  }
+]

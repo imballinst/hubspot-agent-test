@@ -1,15 +1,8 @@
 {% import '../../templates/partials/button.html' %}
-  
+
 <div class="button-wrapper focus_module_container">
-  {{ render_button({
-    'rb_href': module.link.url.href,
-    'rb_type': module.link.url.type,
-    'rb_follow': module.link.no_follow,
-    'rb_tab': module.link.open_in_new_tab,
-    'rb_class': 'button ' ~ module.button_type,
-    'rb_text': module.button_text,
-    'rb_feature': '',
-    'rb_social_icon': '',
-    'rb_acc_title': ''
-  }) }}
+  {{ render_button({ 'rb_href': module.link.url.href, 'rb_type': module.link.url.type, 'rb_follow':
+  module.link.no_follow, 'rb_tab': module.link.open_in_new_tab, 'rb_class': 'button ' ~
+  module.button_type, 'rb_text': module.button_text, 'rb_feature': '', 'rb_social_icon': '',
+  'rb_acc_title': '' }) }}
 </div>

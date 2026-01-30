@@ -22,7 +22,12 @@ function onInfAppend() {
   var container = containers[containers.length - 1];
   var get_url = container.querySelector(".bc_url").getAttribute("data-abs_url");
   var btn_text = document.querySelector(".rp_cols").getAttribute("data-vc");
-  var btn = "<button class='button-view-comments focus_secondary_button' onclick=goToComments('" + get_url + "')>" + btn_text + "</button>";
+  var btn =
+    "<button class='button-view-comments focus_secondary_button' onclick=goToComments('" +
+    get_url +
+    "')>" +
+    btn_text +
+    "</button>";
   container.innerHTML += btn;
 
   if (nodes.length > npp) {

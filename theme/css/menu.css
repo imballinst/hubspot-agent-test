@@ -119,7 +119,10 @@ ul.menu__submenu {
     padding-right: 0;
   }
 
-  .menu__item--depth-1:nth-last-child(-n + 2) .menu__item--depth-2 .menu__submenu .menu-item-container {
+  .menu__item--depth-1:nth-last-child(-n + 2)
+    .menu__item--depth-2
+    .menu__submenu
+    .menu-item-container {
     padding-left: 0;
   }
 }

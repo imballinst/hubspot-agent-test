@@ -2,115 +2,92 @@
   templateType: none
 -->
 
-{% import '../partials/blog/author-page-header.html' %}
-{% import '../partials/blog/tag-page-header.html' %}
+{% import '../partials/blog/author-page-header.html' %} {% import
+'../partials/blog/tag-page-header.html' %}
 
 <!doctype html>
 <html lang="{{ html_lang }}" {{ html_lang_dir }}>
   <head>
-    <meta charset="utf-8">
-    {% if page_meta.html_title || pageTitle %}<title>{{ page_meta.html_title || pageTitle }}</title>{% endif %}
-    <link rel="shortcut icon" href="{{ brand_settings.favicon.src }}" />
-    <meta name="description" content="{{ page_meta.meta_description }}">
-    {{ require_js(get_asset_url("../../child.js")) }}
-{{ standard_header_includes }}
-{{ require_css(get_public_template_url("../../child.css")) }}
-
-    {{ require_css(get_asset_url('../../css/main.css')) }}
-
-    {% if template_css %}
-      {{ require_css(get_asset_url(template_css)) }}
+    <meta charset="utf-8" />
+    {% if page_meta.html_title || pageTitle %}
+    <title>{{ page_meta.html_title || pageTitle }}</title>
     {% endif %}
-
-    {{ require_css(get_asset_url('../../css/theme-overrides.css')) }}
+    <link rel="shortcut icon" href="{{ brand_settings.favicon.src }}" />
+    <meta name="description" content="{{ page_meta.meta_description }}" />
+    {{ require_js(get_asset_url("../../child.js")) }} {{ standard_header_includes }} {{
+    require_css(get_public_template_url("../../child.css")) }} {{
+    require_css(get_asset_url('../../css/main.css')) }} {% if template_css %} {{
+    require_css(get_asset_url(template_css)) }} {% endif %} {{
+    require_css(get_asset_url('../../css/theme-overrides.css')) }}
   </head>
   <body>
     <div class="body-wrapper {{ builtin_body_classes }}">
       <button id="goTop" onclick="goToTop()" aria-label="Go to top">
-        {% icon
-          name='arrow-up'
-          style='SOLID'
-          unicode='f062'
-          purpose='decorative'
-        %}
+        {% icon name='arrow-up' style='SOLID' unicode='f062' purpose='decorative' %}
       </button>
 
       {% if is_in_page_editor or is_in_blog_post_editor %}
-        <div id="focus-plus-banner" class="focus_plus_banner">
-          <div class="focus_plus_banner_inner"></div>
-        </div>
+      <div id="focus-plus-banner" class="focus_plus_banner">
+        <div class="focus_plus_banner_inner"></div>
+      </div>
 
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const banners = [
-              {
-                title: "Focus theme has limited features. You can unlock the full power with <a id='focus-plus-theme' href='https://www.stuff-n-matters.com/focus-plus' target='_blank'><strong>Focus Plus!</strong></a>",
-                teaser: "For more, <a id='focus-plus-comparison' href='https://www.stuff-n-matters.com/focus-plus-comparison' target='_blank'><strong>visit the comparison page.</strong></a> No worries, this banner will not be displayed on your live site.",
-                bgClass: "focus_plus_banner-default"
-              }
-            ];
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const banners = [
+            {
+              title:
+                "Focus theme has limited features. You can unlock the full power with <a id='focus-plus-theme' href='https://www.stuff-n-matters.com/focus-plus' target='_blank'><strong>Focus Plus!</strong></a>",
+              teaser:
+                "For more, <a id='focus-plus-comparison' href='https://www.stuff-n-matters.com/focus-plus-comparison' target='_blank'><strong>visit the comparison page.</strong></a> No worries, this banner will not be displayed on your live site.",
+              bgClass: "focus_plus_banner-default",
+            },
+          ];
 
-            const bannerWrapper = document.querySelector("#focus-plus-banner");
-            const bannerContainer = document.querySelector("#focus-plus-banner .focus_plus_banner_inner");
+          const bannerWrapper = document.querySelector("#focus-plus-banner");
+          const bannerContainer = document.querySelector(
+            "#focus-plus-banner .focus_plus_banner_inner",
+          );
 
-            let selectedBanner;
-            selectedBanner = banners[0];
+          let selectedBanner;
+          selectedBanner = banners[0];
 
-            bannerWrapper.className = "focus_plus_banner " + selectedBanner.bgClass;
-            bannerContainer.innerHTML = `
+          bannerWrapper.className = "focus_plus_banner " + selectedBanner.bgClass;
+          bannerContainer.innerHTML = `
               <div class="focus_plus_banner_title">${selectedBanner.title}</div>
               <div class="focus_plus_banner_teaser">${selectedBanner.teaser}</div>
             `;
 
-            // Check if the element with ID 'focus-plus-theme' exists
-            const themeElement = document.getElementById("focus-plus-theme");
-            if (themeElement) {
-              themeElement.addEventListener("click", function (event) {
-                event.preventDefault();
-                window.open("https://www.stuff-n-matters.com/focus-plus", "_blank");
-              });
-            }
+          // Check if the element with ID 'focus-plus-theme' exists
+          const themeElement = document.getElementById("focus-plus-theme");
+          if (themeElement) {
+            themeElement.addEventListener("click", function (event) {
+              event.preventDefault();
+              window.open("https://www.stuff-n-matters.com/focus-plus", "_blank");
+            });
+          }
 
-            // Check if the element with ID 'focus-plus-comparison' exists
-            const comparisonElement = document.getElementById("focus-plus-comparison");
-            if (comparisonElement) {
-              comparisonElement.addEventListener("click", function (event) {
-                event.preventDefault();
-                window.open("https://www.stuff-n-matters.com/focus-plus-comparison", "_blank");
-              });
-            }
-          });
-        </script>
-      {% endif %}
-
-      {% block header %}
-        {% global_partial path='../partials/header.html' %}
-      {% endblock header %}
-
-      {# Blog author page header #}
-
-      {% if blog_author %}
-        {{ print_blog_author_page_header() }}
-      {% endif %}
-
-      {# Blog tag page header #}
-
-      {% if tag %}
-        {{ print_blog_tag_page_header() }}
-      {% endif %}
+          // Check if the element with ID 'focus-plus-comparison' exists
+          const comparisonElement = document.getElementById("focus-plus-comparison");
+          if (comparisonElement) {
+            comparisonElement.addEventListener("click", function (event) {
+              event.preventDefault();
+              window.open("https://www.stuff-n-matters.com/focus-plus-comparison", "_blank");
+            });
+          }
+        });
+      </script>
+      {% endif %} {% block header %} {% global_partial path='../partials/header.html' %} {% endblock
+      header %} {# Blog author page header #} {% if blog_author %} {{
+      print_blog_author_page_header() }} {% endif %} {# Blog tag page header #} {% if tag %} {{
+      print_blog_tag_page_header() }} {% endif %}
 
       <main id="main-content" class="body-container-wrapper">
-        {% block body %}
-        {% endblock body %}
+        {% block body %} {% endblock body %}
       </main>
 
-      {% block footer %}
-        {% global_partial path='../partials/footer.html' %}
-      {% endblock footer %}
+      {% block footer %} {% global_partial path='../partials/footer.html' %} {% endblock footer %}
     </div>
 
-    {{ require_js(get_asset_url('../../js/main.js')) }}
-
-    {{ standard_footer_includes }}
+    {{ require_js(get_asset_url('../../js/main.js')) }} {{ standard_footer_includes }}
   </body>
 </html>

@@ -1,11 +1,10 @@
 {
   "name": "hubspot-agent-test",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/imballinst/hubspot-agent-test",
-  "author": "Try Ajitiono <ballinst@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.12.0",
+  "author": "Try Ajitiono <ballinst@gmail.com>",
+  "repository": "https://github.com/imballinst/hubspot-agent-test",
+  "main": "index.js",
   "scripts": {
     "fetch": "yarn hs cms fetch theme theme",
     "fmt": "oxfmt",
@@ -16,5 +15,6 @@
   },
   "devDependencies": {
     "oxfmt": "0.27.0"
-  }
+  },
+  "packageManager": "yarn@4.12.0"
 }

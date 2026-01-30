@@ -1,36 +1,26 @@
 {% import '../../templates/partials/listing/structure.html' %}
 
-<div class="focus_grid-container focus_module_number_counters mat_pri_bor mat_pri_cor mat_pri_sha" data-speed="{{ module.speed }}">
-
-    <section class="focus_grid-inner">
-
+<div
+  class="focus_grid-container focus_module_number_counters mat_pri_bor mat_pri_cor mat_pri_sha"
+  data-speed="{{ module.speed }}"
+>
+  <section class="focus_grid-inner">
     {% for item in module.items %}
 
-        <div class="focus_grid-col focus_grid--{{ layouts[module.column_count]['remaining_post_class'] }} {{ cycle_class(layouts[module.column_count]['cycle_class']) }}">    
-
-            <div class="focus_grid-content focus_grid-content--{{ module.column_count }}">
-
-                <div class="focus_module_number_counters-top">
-                    {% if item.custom_icon.name %}  
-                        {% icon
-                            name='{{ item.custom_icon.name }}'
-                            style='{{ item.custom_icon.type }}'
-                            unicode='{{ item.custom_icon.unicode }}'
-                            purpose='decorative'
-                            extra_classes='counter_icon'
-                        %}
-                    {% endif %}
-                    <div class="focus_module_number_counter" data-target="{{ item.target }}">0</div>
-                    <div class="focus_module_number_counters_text">{{ item.text }}</div>
-                </div>
-
-            </div>
-
+    <div
+      class="focus_grid-col focus_grid--{{ layouts[module.column_count]['remaining_post_class'] }} {{ cycle_class(layouts[module.column_count]['cycle_class']) }}"
+    >
+      <div class="focus_grid-content focus_grid-content--{{ module.column_count }}">
+        <div class="focus_module_number_counters-top">
+          {% if item.custom_icon.name %} {% icon name='{{ item.custom_icon.name }}' style='{{
+          item.custom_icon.type }}' unicode='{{ item.custom_icon.unicode }}' purpose='decorative'
+          extra_classes='counter_icon' %} {% endif %}
+          <div class="focus_module_number_counter" data-target="{{ item.target }}">0</div>
+          <div class="focus_module_number_counters_text">{{ item.text }}</div>
         </div>
+      </div>
+    </div>
 
     {% endfor %}
-
-    </section>
-
+  </section>
 </div>
-    

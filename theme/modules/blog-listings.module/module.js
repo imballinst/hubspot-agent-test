@@ -104,7 +104,8 @@ function onInfAppend() {
   // Re-organize column classes
   var elChildren = document.querySelector(".focus_grid-inner").querySelectorAll(".focus_grid-col");
   for (i = 0; i < elChildren.length; i++) {
-    elChildren[i].className = "focus_grid-col focus_grid--" + mblogLayout + " " + cycle[inc] + mblogVisClass;
+    elChildren[i].className =
+      "focus_grid-col focus_grid--" + mblogLayout + " " + cycle[inc] + mblogVisClass;
     inc = ++inc % cycle.length;
   }
 }

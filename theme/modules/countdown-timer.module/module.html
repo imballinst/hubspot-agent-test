@@ -1,21 +1,32 @@
-{# Module styles #}
+{# Module styles #} {% require_css %}
+<style>
+  {% scope_css %}
 
-{% require_css %}
-  <style>
-    {% scope_css %}
+    .focus_module_countdown_timer-container {
+      color: {{ module.styles.text_color.color }};
+    }
 
-      .focus_module_countdown_timer-container {
-        color: {{ module.styles.text_color.color }};
-      }
-
-    {% end_scope_css %}
-  </style>
+  {% end_scope_css %}
+</style>
 {% end_require_css %}
 
 <div class="focus_module_countdown_timer">
   {% if module.timer_type == 'duration' %}
-    <div id="mmct_duration" class="focus_module_countdown_timer-container" data-duration="{{ module.duration_options.duration }}"></div>
+  <div
+    id="mmct_duration"
+    class="focus_module_countdown_timer-container"
+    data-duration="{{ module.duration_options.duration }}"
+  ></div>
   {% elif module.timer_type == 'date' %}
-    <div id="mmct_date" class="focus_module_countdown_timer-container" data-date="{{ module.date_options.date }}" data-expired="{{ module.date_options.expired }}" data-days="{{ module.date_options.days }}" data-hours="{{ module.date_options.hours }}" data-minutes="{{ module.date_options.minutes }}" data-seconds="{{ module.date_options.seconds }}"></div>
+  <div
+    id="mmct_date"
+    class="focus_module_countdown_timer-container"
+    data-date="{{ module.date_options.date }}"
+    data-expired="{{ module.date_options.expired }}"
+    data-days="{{ module.date_options.days }}"
+    data-hours="{{ module.date_options.hours }}"
+    data-minutes="{{ module.date_options.minutes }}"
+    data-seconds="{{ module.date_options.seconds }}"
+  ></div>
   {% endif %}
 </div>

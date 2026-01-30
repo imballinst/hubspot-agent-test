@@ -1,0 +1,41 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: Blog Index with Card Layout
+  screenshotPath: ../images/template-previews/blog-index.png
+-->
+
+{% set template_css = '../../css/templates/blog-index.css' %} {% extends
+'./layouts/base.html' %} {% block body %} {% dnd_area 'dnd_area_blog_hero'
+label='Blog Hero Section', class='body-container body-container--blog-hero' %}
+{% dnd_section %} {% include '../sections/blog-index-hero.html' %} {%
+end_dnd_section %} {% end_dnd_area %} {% dnd_area 'dnd_area_blog_listing'
+label='Blog Posts', class='body-container body-container--blog-listing' %} {%
+dnd_section padding={ 'default': { 'top': 40, 'bottom': 40 } } %}
+<div class="blog-posts-container">
+  {% for c in contents %}
+  <div class="blog-post-item">
+    {% dnd_module path='../modules/blog-card' %} {% set blog_post = c %} {% set
+    show_image = true %} {% end_dnd_module %}
+  </div>
+  {% endfor %}
+</div>
+{% end_dnd_section %} {% end_dnd_area %} {% endblock body %}
+
+<style>
+  .blog-posts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .blog-posts-container {
+      padding: 0 1rem;
+      gap: 1.5rem;
+    }
+  }
+</style>

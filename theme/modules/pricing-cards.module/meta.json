@@ -1,15 +1,17 @@
 {
-  "content_tags" : [ {
-    "name" : "LISTS",
-    "source" : "USER"
-  } ],
-  "global" : false,
-  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
-  "inline_help_text" : "<p>If you have some different tiers for your products or services, you can use this module to list their features and prices.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
-  "categories" : [ "design", "commerce" ],
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "module_id" : 306783804097,
-  "label" : "Pricing cards",
-  "icon" : "../../images/module-icons/tag-fill.svg",
-  "is_available_for_new_content" : true
+  "content_tags": [
+    {
+      "name": "LISTS",
+      "source": "USER"
+    }
+  ],
+  "global": false,
+  "content_types": ["LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST"],
+  "inline_help_text": "<p>If you have some different tiers for your products or services, you can use this module to list their features and prices.</p>This module has limited settings and features. Much more available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+  "categories": ["design", "commerce"],
+  "host_template_types": ["PAGE", "BLOG_POST", "BLOG_LISTING"],
+  "module_id": 306783804097,
+  "label": "Pricing cards",
+  "icon": "../../images/module-icons/tag-fill.svg",
+  "is_available_for_new_content": true
 }

@@ -1,5 +1,7 @@
 // Animation speed
-const speed = parseInt(document.querySelector(".focus_module_number_counters").getAttribute("data-speed")) * 500;
+const speed =
+  parseInt(document.querySelector(".focus_module_number_counters").getAttribute("data-speed")) *
+  500;
 
 // Selector
 const counters = document.querySelectorAll(".focus_module_number_counter");
@@ -9,7 +11,8 @@ var animated = false;
 window.addEventListener("scroll", scrollFunctionNumberCounters);
 
 function scrollFunctionNumberCounters() {
-  var countersTop = document.querySelector(".focus_module_number_counters").offsetTop - window.innerHeight;
+  var countersTop =
+    document.querySelector(".focus_module_number_counters").offsetTop - window.innerHeight;
   var top = this.scrollY;
   if (!animated && top > countersTop) {
     // Calculate speeds to finish the animations at the same time
