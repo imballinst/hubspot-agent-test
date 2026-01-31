@@ -25,3 +25,4 @@ Use this skill when:
 1. Always follow semantic HTML.
 2. DO NOT SKEW FROM THE DESIGN. There may be flaws in the design, but it is what it is.
 3. DO NOT CREATE ADDITIONAL FILES that are otherwise not required. Focus on the given task at hand.
+4. If the prompt specifies a file (or files) that already exists, do not recreate them.
