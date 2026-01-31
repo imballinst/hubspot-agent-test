@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "fetch": "yarn hs cms fetch new-theme-1 new-theme-1 --overwrite",
-    "upload": "yarn hs cms upload new-theme-1 new-theme-1 --clean",
+    "upload": "yarn hs cms upload new-theme-1 new-theme-1",
     "watch": "yarn hs cms watch new-theme-1 new-theme-1"
   },
   "dependencies": {
