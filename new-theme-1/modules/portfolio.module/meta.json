@@ -11,11 +11,11 @@
   "module_id" : 306815087309,
   "js_assets" : [ {
     "autoload" : false,
-    "path" : "../../js/packages/masonry.pkgd.min.js",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/masonry.pkgd.min.js",
     "name" : "masonry.pkgd.min.js"
   }, {
     "autoload" : false,
-    "path" : "../../js/packages/imagesloaded.pkgd.min.js",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/imagesloaded.pkgd.min.js",
     "name" : "imagesloaded.pkgd.min.js"
   } ],
   "label" : "Portfolio",

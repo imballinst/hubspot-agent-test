@@ -1,0 +1,577 @@
+{
+  "author_layout_style.choices.1col" : {
+    "message" : "1 Column",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.choices.2col" : {
+    "message" : "2 Columns",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.choices.3col" : {
+    "message" : "3 Columns",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.choices.masonry2" : {
+    "message" : "Masonry (2 Columns)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.choices.masonry3" : {
+    "message" : "Masonry (3 Columns)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.label" : {
+    "message" : "Author page layout style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "author_layout_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "end_of_content.default" : {
+    "message" : "End of content",
+    "description" : "",
+    "placeholders" : null
+  },
+  "end_of_content.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "end_of_content.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "end_of_content.label" : {
+    "message" : "End of content text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "end_of_content.placeholder" : {
+    "message" : "End of content",
+    "description" : "",
+    "placeholders" : null
+  },
+  "end_of_content.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_after.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_after.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_after.label" : {
+    "message" : "Infinite scroll after this number of page(s)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_after.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_status.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_status.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_status.label" : {
+    "message" : "Show pagination status",
+    "description" : "",
+    "placeholders" : null
+  },
+  "inf_status.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.choices.1col" : {
+    "message" : "1 Column",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.choices.2col" : {
+    "message" : "2 Columns",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.choices.3col" : {
+    "message" : "3 Columns",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.choices.masonry2" : {
+    "message" : "Masonry (2 Columns)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.choices.masonry3" : {
+    "message" : "Masonry (3 Columns)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.label" : {
+    "message" : "Layout style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.default" : {
+    "message" : "View more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.label" : {
+    "message" : "Load more button text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.placeholder" : {
+    "message" : "View more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "loading.default" : {
+    "message" : "Loading",
+    "description" : "",
+    "placeholders" : null
+  },
+  "loading.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "loading.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "loading.label" : {
+    "message" : "Loading text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "loading.placeholder" : {
+    "message" : "Loading",
+    "description" : "",
+    "placeholders" : null
+  },
+  "loading.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "blog-listings",
+    "description" : "",
+    "placeholders" : null
+  },
+  "no_more_pages.default" : {
+    "message" : "No more pages to load",
+    "description" : "",
+    "placeholders" : null
+  },
+  "no_more_pages.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "no_more_pages.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "no_more_pages.label" : {
+    "message" : "No more pages text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "no_more_pages.placeholder" : {
+    "message" : "No more pages to load",
+    "description" : "",
+    "placeholders" : null
+  },
+  "no_more_pages.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.classical" : {
+    "message" : "Classical",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.inf_scroll" : {
+    "message" : "Infinite scroll",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.inf_scroll_load_more" : {
+    "message" : "Infinite scroll + load more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.load_more" : {
+    "message" : "Load more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.label" : {
+    "message" : "Pagination",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.author.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.author.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.author.label" : {
+    "message" : "Author",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.author.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button.label" : {
+    "message" : "Button",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button_text.default" : {
+    "message" : "Read More",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button_text.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button_text.label" : {
+    "message" : "Button text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button_text.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.button_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.description.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.description.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.description.label" : {
+    "message" : "Description",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.description.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.featured_image.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.featured_image.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.featured_image.label" : {
+    "message" : "Featured image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.featured_image.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.label" : {
+    "message" : "Show/Hide elements",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.publish_date.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.publish_date.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.publish_date.label" : {
+    "message" : "Publish date",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.publish_date.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.tags.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.tags.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.tags.label" : {
+    "message" : "Tags",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.tags.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.title.label" : {
+    "message" : "Title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_hide.title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.label" : {
+    "message" : "Styles",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.styling.choices.auto" : {
+    "message" : "Auto",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.styling.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.styling.inline_help_text" : {
+    "message" : "Styling options for this module are only available in <a href='https://www.stuff-n-matters.com/focus-plus' target='_blank'>Focus Plus theme</a>.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.styling.label" : {
+    "message" : "Styling",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.styling.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.choices.1col" : {
+    "message" : "1 Column",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.choices.2col" : {
+    "message" : "2 Columns",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.choices.3col" : {
+    "message" : "3 Columns",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.choices.masonry2" : {
+    "message" : "Masonry (2 Columns)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.choices.masonry3" : {
+    "message" : "Masonry (3 Columns)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.label" : {
+    "message" : "Tag page layout style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "tag_layout_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

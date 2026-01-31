@@ -1,0 +1,202 @@
+{
+  "heading.default" : {
+    "message" : "Blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading.label" : {
+    "message" : "Section heading",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading.placeholder" : {
+    "message" : "Blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.default" : {
+    "message" : "Load more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.label" : {
+    "message" : "Load more button text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.placeholder" : {
+    "message" : "Load more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "load_more_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "blog-listings-custom",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.classical" : {
+    "message" : "Classical",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.inf_scroll" : {
+    "message" : "Infinite scroll",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.choices.load_more" : {
+    "message" : "Load more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.label" : {
+    "message" : "Pagination",
+    "description" : "",
+    "placeholders" : null
+  },
+  "pagination.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_date.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_date.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_date.label" : {
+    "message" : "Show publish date",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_date.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_featured_image.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_featured_image.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_featured_image.label" : {
+    "message" : "Show featured image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_featured_image.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_heading.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_heading.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_heading.label" : {
+    "message" : "Show section heading",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_heading.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_summary.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_summary.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_summary.label" : {
+    "message" : "Show summary",
+    "description" : "",
+    "placeholders" : null
+  },
+  "show_summary.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "summary_length.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "summary_length.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "summary_length.label" : {
+    "message" : "Summary character limit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "summary_length.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

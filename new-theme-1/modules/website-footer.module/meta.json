@@ -11,7 +11,7 @@
   "module_id" : 306815086327,
   "css_assets" : [ {
     "autoload" : false,
-    "path" : "../../css/menu.css",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/css/menu.css",
     "name" : "menu.css"
   } ],
   "label" : "Website footer",

@@ -11,11 +11,11 @@
   "module_id" : 306893489897,
   "js_assets" : [ {
     "autoload" : false,
-    "path" : "../../js/menu.js",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/menu.js",
     "name" : "menu.js"
   }, {
     "autoload" : false,
-    "path" : "../../js/language.js",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/language.js",
     "name" : "language.js"
   } ],
   "label" : "Website header",

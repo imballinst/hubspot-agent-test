@@ -12,14 +12,14 @@
   "module_id" : 306815086329,
   "js_assets" : [ {
     "autoload" : false,
-    "path" : "../../js/packages/masonry.pkgd.min.js",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/masonry.pkgd.min.js",
     "name" : "masonry.pkgd.min.js"
   }, {
     "autoload" : false,
-    "path" : "../../js/packages/infinite-scroll.pkgd.min.js",
+    "path" : "../../../@marketplace/Stuff_Matters_Inc_/Focus/js/packages/infinite-scroll.pkgd.min.js",
     "name" : "infinite-scroll.pkgd.min.js"
   } ],
-  "label" : "Blog listings",
+  "label" : "Blog listings xdd",
   "icon" : "../../images/module-icons/blog.svg",
   "is_available_for_new_content" : true
 }
