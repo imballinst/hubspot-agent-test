@@ -1,0 +1,11 @@
+/* Blog listings custom module - additional styles */
+
+/* CSS custom properties for theming */
+:root {
+  --blog-custom-card-bg: #2d3748;
+  --blog-custom-accent: #4fd1c5;
+  --blog-custom-accent-hover: #81e6d9;
+  --blog-custom-text-primary: #ffffff;
+  --blog-custom-text-secondary: #cbd5e0;
+  --blog-custom-text-muted: #a0aec0;
+}

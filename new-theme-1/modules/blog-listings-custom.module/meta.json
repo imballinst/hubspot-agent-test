@@ -1,0 +1,23 @@
+{
+  "content_tags": [
+    {
+      "name": "BLOG",
+      "source": "USER"
+    }
+  ],
+  "global": false,
+  "content_types": [
+    "BLOG_LISTING"
+  ],
+  "master_language": "en",
+  "inline_help_text": "<p>Custom blog listing module with horizontal card layout.</p>",
+  "categories": [
+    "blog"
+  ],
+  "host_template_types": [
+    "BLOG_LISTING"
+  ],
+  "label": "Blog listings custom",
+  "icon": "../../images/module-icons/blog.svg",
+  "is_available_for_new_content": true
+}

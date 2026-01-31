@@ -1,0 +1,268 @@
+{# Blog listings custom module #}
+
+{% require_css %}
+  <style>
+    {% scope_css %}
+
+      .blog-custom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .blog-custom__heading {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: var(--primary-color, #ffffff);
+      }
+
+      .blog-custom__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .blog-custom__item {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--card-bg, #2d3748);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .blog-custom__item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .blog-custom__content {
+        flex: 1;
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .blog-custom__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.3;
+      }
+
+      .blog-custom__title-link {
+        color: var(--accent-color, #4fd1c5);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .blog-custom__title-link:hover {
+        color: var(--accent-color-hover, #81e6d9);
+        text-decoration: underline;
+      }
+
+      .blog-custom__date {
+        font-size: 0.875rem;
+        color: var(--text-muted, #a0aec0);
+        margin: 0;
+      }
+
+      .blog-custom__summary {
+        font-size: 0.95rem;
+        color: var(--text-secondary, #cbd5e0);
+        line-height: 1.6;
+        margin: 0.5rem 0 0 0;
+      }
+
+      .blog-custom__summary p {
+        margin: 0;
+      }
+
+      .blog-custom__image-wrapper {
+        flex: 0 0 45%;
+        max-width: 45%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .blog-custom__image-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .blog-custom__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-height: 180px;
+      }
+
+      /* Pagination styles */
+      .blog-custom__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 1rem 0;
+      }
+
+      .blog-custom__pagination-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        color: var(--accent-color, #4fd1c5);
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+      }
+
+      .blog-custom__pagination-link:hover {
+        background-color: rgba(79, 209, 197, 0.1);
+      }
+
+      .blog-custom__pagination-link--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .blog-custom__load-more {
+        display: block;
+        margin: 2rem auto 0;
+        padding: 0.75rem 2rem;
+        background-color: var(--accent-color, #4fd1c5);
+        color: var(--card-bg, #2d3748);
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .blog-custom__load-more:hover {
+        background-color: var(--accent-color-hover, #81e6d9);
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .blog-custom__item {
+          flex-direction: column-reverse;
+        }
+
+        .blog-custom__image-wrapper {
+          flex: none;
+          max-width: 100%;
+          height: 200px;
+        }
+
+        .blog-custom__content {
+          padding: 1.25rem;
+        }
+
+        .blog-custom__title {
+          font-size: 1.1rem;
+        }
+      }
+
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}
+
+<div class="blog-custom">
+
+  {# Section heading #}
+  {% if module.show_heading and module.heading %}
+    <h1 class="blog-custom__heading">{{ module.heading }}</h1>
+  {% endif %}
+
+  {# Blog posts list #}
+  <div class="blog-custom__list">
+    {% for content in contents %}
+      <article class="blog-custom__item" aria-label="Blog post: {{ content.name }}">
+
+        {# Content section (left side) #}
+        <div class="blog-custom__content">
+
+          {# Title #}
+          <h2 class="blog-custom__title">
+            <a class="blog-custom__title-link" href="{{ content.absolute_url }}">
+              {{ content.name }}
+            </a>
+          </h2>
+
+          {# Publish date #}
+          {% if module.show_date %}
+            <p class="blog-custom__date">
+              <time datetime="{{ content.publish_date }}">
+                {{ content.publish_date|format_datetime('MMM dd, yyyy') }}
+              </time>
+            </p>
+          {% endif %}
+
+          {# Summary #}
+          {% if module.show_summary and content.post_list_content %}
+            <div class="blog-custom__summary">
+              {{ content.post_list_content|truncatehtml(module.summary_length) }}
+            </div>
+          {% endif %}
+
+        </div>
+
+        {# Featured image (right side) #}
+        {% if module.show_featured_image and content.featured_image %}
+          <div class="blog-custom__image-wrapper">
+            <a class="blog-custom__image-link" href="{{ content.absolute_url }}" aria-label="Read full post: {{ content.name }}">
+              <img
+                class="blog-custom__image"
+                src="{{ content.featured_image }}"
+                alt="{{ content.featured_image_alt_text }}"
+                loading="lazy"
+              >
+            </a>
+          </div>
+        {% endif %}
+
+      </article>
+    {% endfor %}
+  </div>
+
+  {# Pagination #}
+  {% if module.pagination == 'classical' %}
+    {% if contents.total_page_count > 1 %}
+      <nav class="blog-custom__pagination" aria-label="Blog pagination">
+        {% if contents.has_previous %}
+          <a class="blog-custom__pagination-link" href="{{ blog_page_link(current_page_num - 1) }}" aria-label="Previous page">
+            ← Previous
+          </a>
+        {% else %}
+          <span class="blog-custom__pagination-link blog-custom__pagination-link--disabled">← Previous</span>
+        {% endif %}
+
+        <span class="blog-custom__pagination-info">
+          Page {{ current_page_num }} of {{ contents.total_page_count }}
+        </span>
+
+        {% if contents.has_next %}
+          <a class="blog-custom__pagination-link" href="{{ blog_page_link(current_page_num + 1) }}" aria-label="Next page">
+            Next →
+          </a>
+        {% else %}
+          <span class="blog-custom__pagination-link blog-custom__pagination-link--disabled">Next →</span>
+        {% endif %}
+      </nav>
+    {% endif %}
+  {% elif module.pagination == 'load_more' or module.pagination == 'inf_scroll' %}
+    {% if contents.has_next %}
+      <button class="blog-custom__load-more" data-next-page="{{ blog_page_link(current_page_num + 1) }}">
+        {{ module.load_more_text }}
+      </button>
+    {% endif %}
+  {% endif %}
+
+</div>

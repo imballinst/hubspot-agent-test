@@ -1,0 +1,108 @@
+[
+  {
+    "id": "heading",
+    "name": "heading",
+    "label": "Section heading",
+    "required": false,
+    "locked": false,
+    "placeholder": "Blog",
+    "allow_new_line": false,
+    "type": "text",
+    "default": "Blog"
+  },
+  {
+    "id": "show_heading",
+    "name": "show_heading",
+    "label": "Show section heading",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "id": "show_featured_image",
+    "name": "show_featured_image",
+    "label": "Show featured image",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "id": "show_date",
+    "name": "show_date",
+    "label": "Show publish date",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "id": "show_summary",
+    "name": "show_summary",
+    "label": "Show summary",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "id": "summary_length",
+    "name": "summary_length",
+    "label": "Summary character limit",
+    "required": false,
+    "locked": false,
+    "visibility": {
+      "controlling_field": "show_summary",
+      "controlling_value_regex": "true",
+      "operator": "EQUAL"
+    },
+    "display": "text",
+    "min": 50,
+    "max": 500,
+    "step": 10,
+    "type": "number",
+    "default": 200
+  },
+  {
+    "id": "pagination",
+    "name": "pagination",
+    "label": "Pagination",
+    "required": true,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      [
+        "classical",
+        "Classical"
+      ],
+      [
+        "load_more",
+        "Load more"
+      ],
+      [
+        "inf_scroll",
+        "Infinite scroll"
+      ]
+    ],
+    "multiple": false,
+    "type": "choice",
+    "default": "classical"
+  },
+  {
+    "id": "load_more_text",
+    "name": "load_more_text",
+    "label": "Load more button text",
+    "required": false,
+    "locked": false,
+    "visibility": {
+      "controlling_field": "pagination",
+      "controlling_value_regex": "load_more|inf_scroll",
+      "operator": "MATCHES_REGEX"
+    },
+    "placeholder": "Load more",
+    "allow_new_line": false,
+    "type": "text",
+    "default": "Load more"
+  }
+]
